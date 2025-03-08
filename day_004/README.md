@@ -2,7 +2,7 @@
 - Randomization
 - Python Lists
 
-## Treasure Island
+## Rock, Paper, Scissors
 
 <p align="center">
   <img src="rock_paper_scissors.gif" alt="animated" />
