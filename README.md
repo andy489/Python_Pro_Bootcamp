@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-:|:-:|
+|7|Beginner|Hangman|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_007/day_007.ipynb)|[**Hangman**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_007/hangman.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_007)|
 |6|Beginner|Functions, While Loops and Karel the Robot (Reeborg's World)|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_006/day_006.ipynb)|[**Maze Escape**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_006/maze_escape.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_006)|
 |5|Beginner|For Loops, Range and Code Blocks|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_005/day_005.ipynb)|[**Password Generator**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_005/password_generator.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_005)|
 |4|Beginner|Randomization and Python Lists|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_004/day_004.ipynb)|[**Rock, Paper, Scissors**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_004/rock_paper_scissors.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_004)|
