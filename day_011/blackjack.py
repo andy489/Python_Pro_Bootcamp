@@ -48,31 +48,26 @@ def compare(u_score, c_score):
 
 def play_game():
     player_cards = []
-    player_score = 0
-
     dealer_cards = []
-    dealer_score = 0
-
-    is_game_over = False
 
     for _ in range(2):
         player_cards.append(deal_card())
         dealer_cards.append(deal_card())
 
-    while not is_game_over:
+    while True:
         player_score = calculate_score(player_cards)
 
         print(f"Your cards: {player_cards}, current score: {player_score}")
         print(f"Dealer's first card is: {dealer_cards[0]}")
 
         if player_score > 21:
-            is_game_over = True
+            break
         else:
             player_hit = input("Type 'y' to hit, type 'n' to stand:\n")
             if player_hit == "y":
                 player_cards.append(deal_card())
             else:
-                is_game_over = True
+                break
 
     dealer_score = calculate_score(dealer_cards)
 
