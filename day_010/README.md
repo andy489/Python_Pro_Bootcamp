@@ -1,7 +1,7 @@
 ## Topics
 - Functions with Outputs
 
-## Basic Calculator
+## Calculator
 
 <p align="center">
   <img src="calculator.gif" alt="animated" />
