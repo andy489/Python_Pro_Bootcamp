@@ -1,7 +1,7 @@
 ## Topics
 - Functions with Outputs
 
-## Blind Auction
+## Basic Calculator
 
 <p align="center">
   <img src="calculator.gif" alt="animated" />
