@@ -1,7 +1,7 @@
 ## Topics
 - Blackjack Capstone Project
 
-## Blind Auction
+## Blackjack
 
 <p align="center">
   <img src="blackjack.gif" alt="animated" />
