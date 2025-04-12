@@ -1,6 +1,7 @@
 from art import logo
 from random import choice
 
+BLACKJACK_SCORE = 21
 
 def deal_card():
     """Returns a random card from the deck"""
@@ -31,16 +32,16 @@ def calculate_score(cards):
     return total
 
 
-def compare(u_score, c_score):
-    if u_score == c_score:
+def compare(player_score, dealer_score):
+    if player_score == dealer_score:
         return "Hold 🙃\n"
-    elif c_score == 0:
+    elif dealer_score == 0:
         "You lose. Dealer has Blackjack 😱\n"
-    elif u_score > 21:
+    elif player_score > BLACKJACK_SCORE:
         return "You lose. You Bust. 😭\n"
-    elif c_score > 21:
+    elif dealer_score > BLACKJACK_SCORE:
         return "You win. Dealer Bust. 😁\n"
-    elif u_score > c_score:
+    elif player_score > dealer_score:
         return "You win 😏\n"
     else:
         return "You lose 😤\n"
@@ -60,7 +61,7 @@ def play_game():
         print(f"Your cards: {player_cards}, current score: {player_score}")
         print(f"Dealer's first card is: {dealer_cards[0]}")
 
-        if player_score > 21:
+        if player_score > BLACKJACK_SCORE:
             break
         else:
             player_hit = input("Type 'y' to hit, type 'n' to stand:\n")
@@ -71,7 +72,7 @@ def play_game():
 
     dealer_score = calculate_score(dealer_cards)
 
-    if player_score <= 21:
+    if player_score <= BLACKJACK_SCORE:
         while dealer_score < 17:
             dealer_cards.append(deal_card())
             dealer_score = calculate_score(dealer_cards)
