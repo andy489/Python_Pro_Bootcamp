@@ -2,7 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-:|:-:|
-|11|Beginner|Blackjack Capstone Project|No Jupyter Notebook|[**Blackjack**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_011/blackjack.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_011)|
+|11|Beginner|Blackjack Capstone Project|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_011/day_011.ipynb)|[**Blackjack**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_011/blackjack.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_011)|
 |10|Beginner|Functions with Outputs|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_010/day_010.ipynb)|[**Calculator**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_010/calculator.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_010)|
 |9|Beginner|Dictionaries and Nesting|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_009/day_009.ipynb)|[**Blind Auction**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_009/blind_auction.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_009)|
 |8|Beginner|Functions with Inputs, Arguments and Parameters|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_008/day_008.ipynb)|[**Ceaser Cipher**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_008/ceaser_cipher.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_008)|
