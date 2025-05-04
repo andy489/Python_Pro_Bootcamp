@@ -1,2 +1,2 @@
 ## Topics
-- Debug
+- Debugging
