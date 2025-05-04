@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-:|:-:|
+|13|Beginner|Debugging|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_013/day_013.ipynb)|-|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_013)|
 |12|Beginner|Scopes and Number Guessing Game|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_012/day_012.ipynb)|[**Number Guessing Game**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_012/number_guessing_game.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_012)|
 |11|Beginner|Blackjack Capstone Project|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_011/day_011.ipynb)|[**Blackjack**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_011/blackjack.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_011)|
 |10|Beginner|Functions with Outputs|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_010/day_010.ipynb)|[**Calculator**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_010/calculator.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_010)|
