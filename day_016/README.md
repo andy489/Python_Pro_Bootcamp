@@ -4,5 +4,5 @@
 ## Coffee Machine
 
 <p align="center">
-  <img src=./coffee_machine_oop/coffee_machine_oop.gif" alt="animated" />
+  <img src="./coffee_machine_oop/coffee_machine_oop.gif" alt="animated" />
 </p>
