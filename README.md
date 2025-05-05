@@ -2,7 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-:|:-:|
-|16|Intermediate|OOP:Coffee Machine|-|- [**Turtle Graphics**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_016/turtle_graphics.py)<br>- [**Pretty Table**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_016/pretty_table.py)<br>- [**OOP: Coffee Machine**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_016/coffee_machine_oop/main.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_016)|
+|16|Intermediate|OOP:Coffee Machine|-|<ul><li>[**Turtle Graphics**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_016/turtle_graphics.py)</li><li>[**Pretty Table**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_016/pretty_table.py)</li><li>[**OOP: Coffee Machine**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_016/coffee_machine_oop/main.py)</li>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_016)|
 |15|Beginner|Coffee Machine|-|[**Coffee Machine**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_015/coffee_machine.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_015)|
 |14|Beginner|Higher Lower Game|-|[**Higher Lower Game**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_014/higher_lower_game.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_014)|
 |13|Beginner|Debugging|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/day_013/day_013.ipynb)|-|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/day_013)|
