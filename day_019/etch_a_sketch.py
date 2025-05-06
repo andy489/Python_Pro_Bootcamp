@@ -31,7 +31,7 @@ def clear_screen():
 
 
 s.listen()
-s.onkey(move_forward, "f")
+s.onkey(move_forward, "w")
 s.onkey(move_backwards, "s")
 s.onkey(turn_left, "a")
 s.onkey(turn_right, "d")
