@@ -5,6 +5,12 @@
 - Create a snake body
 - Move the snake
 - Control the snake
+- 
+## Snake I
+
+<p align="center">
+    <img src="snake I.gif" alt="animated" />
+</p>
 
 ## Day 2 (day_021)
 - Detect collision with food
