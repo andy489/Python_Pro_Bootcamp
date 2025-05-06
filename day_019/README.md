@@ -13,7 +13,7 @@
 ## Turtle Racing Game
 
 <p align="center">
-    <img src="race/turtle_racing_game.gif" alt="animated" />
+    <img src="race/turtle_race_game.gif" alt="animated" />
 </p>
 
 
