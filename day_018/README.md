@@ -20,8 +20,8 @@
     <img src="gifs/draw_a_spirograph.gif" alt="animated" />
 </p>
 
-## Hrist Painting Project
+## Hirst Painting Project
 
 <p align="center">
-    <img src="gifs/hrist_painting.gif" alt="animated" />
+    <img src="gifs/hirst_painting.gif" alt="animated" />
 </p>
