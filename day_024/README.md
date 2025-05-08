@@ -1,9 +1,9 @@
 ## Topics
 - Files, Directories and Paths
 
-## Pong
+## Memo Snake
 
 <p align="center">
-    <img src="memo_snake.gif" alt="animated" />
+    <img src="./memo_snake/memo_snake.gif" alt="animated" />
 </p>
 
