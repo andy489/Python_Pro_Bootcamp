@@ -4,6 +4,6 @@
 ## Memo Snake
 
 <p align="center">
-    <img src="./us_states_game/main.gif" alt="animated" />
+    <img src="us_states_game.gif" alt="animated" />
 </p>
 
