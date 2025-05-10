@@ -6,5 +6,5 @@
 ## Mile to Kilometers Converter Project
 
 <p align="center">
-    <img src="mile_to_km.gif" alt="animated" />
+    <img src="miles_to_km.gif" alt="animated" />
 </p>
