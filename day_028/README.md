@@ -3,7 +3,13 @@
 - Dynamic Typing
 - The Pomodoro GUI Application
 
-## Mile to Kilometers Converter Project
+## The Pomodoro Technique
+
+<p align="center">
+    <img src="pomodoro_technique.png" alt="img" />
+</p>
+
+## Pomodoro Application
 
 <p align="center">
     <img src="pomodoro.gif" alt="animated" />
