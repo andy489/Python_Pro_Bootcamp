@@ -2,7 +2,7 @@
 - List Comprehension
 - NATO Alphabet Project
 
-## Memo Snake
+## Nato Alphabet Project
 
 <p align="center">
     <img src="nato_alphabet.gif" alt="animated" />
