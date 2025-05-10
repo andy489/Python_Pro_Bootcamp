@@ -6,7 +6,7 @@
 ## The Pomodoro Technique
 
 <p align="center">
-    <img src="pomodoro_technique.png" alt="img" />
+    <img src="pomodoro_technique.png" style="width:5m" alt="img" />
 </p>
 
 ## Pomodoro Application
