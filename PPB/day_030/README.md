@@ -2,7 +2,7 @@
 - Errors and Exceptions
 - JSON Data
 
-## Password Manager I
+## Password Manager II
 
 <p align="center">
     <img src="password_manager_2/password_manager_II.gif" alt="animated" />
