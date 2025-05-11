@@ -5,5 +5,5 @@
 ## Password Manager II
 
 <p align="center">
-    <img src="password_manager_2/password_manager_II.gif" alt="animated" />
+    <img src="password_manager2/password_manager_II.gif" alt="animated" />
 </p>
