@@ -6,7 +6,7 @@
 ## Kanye
 
 <p align="center">
-    <img src="kanye_quote_machine/kanye.png" alt="animated" />
+    <img src="kanye_quote_machine/kanye.gif" alt="animated" />
 </p>
 
 ## ISS Overhead Notifier
