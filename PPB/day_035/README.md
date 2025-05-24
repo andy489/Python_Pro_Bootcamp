@@ -7,5 +7,5 @@
 ## Rain Alert
 
 <p align="center">
-    <img src="rain_alert.png" alt="sms" />
+    <img src="rain_alert.png" style="width:420px" alt="sms" />
 </p>
