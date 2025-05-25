@@ -1,8 +1,6 @@
 ## Topics
-- HTTP Post Requests
+- HTTP Post, Put and Delete Requests
 - Advanced Authentication (using and HTTP Header)
-- API Post Requests and Headers
-- Put and Delete Requests
 
 ## Habit Tracking Project
 
