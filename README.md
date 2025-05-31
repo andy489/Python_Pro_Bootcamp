@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|38|Intermediate+|Python DateTime strftime(), APIs and making POSTR Requests, Authorization Headers, Environment Variables|-|Workout Tracking Using Google Sheets<ul><li>[**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_038/main.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_0387)|
 |37|Intermediate+|HTTP Post, Put and Delete Requests; Advanced Authentication (using and HTTP Header)|-|Habit Tracking Project<ul><li>[**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_037/main.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_037)|
 |36|Intermediate+|Stock News Monitoring Project|-|Stock News<ul><li>[**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_036/main.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_036)|
 |35|Intermediate+|API Keys, Authentication, Environment Variables, Sending SMS|-|Rain Alert<ul><li>[**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_035/main.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_035)|
