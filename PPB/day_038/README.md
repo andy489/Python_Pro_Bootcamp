@@ -1,6 +1,6 @@
 ## Topics
 - Python DateTime strftime()
-- APIs and making POSTR Requests
+- APIs and making POST Requests
 - Authorization Headers
 - Environment Variables
 
