@@ -71,6 +71,6 @@ def find_cheapest_flight(data):
             return_date = flight["itineraries"][1]["segments"][0]["departure"]["at"].split("T")[0]
             # Add number of stops
             cheapest_flight = FlightData(lowest_price, origin, destination, out_date, return_date, nr_stops)
-            print(f"Lowest price to {destination} is €{lowest_price}")
+            print(f"Lowest price to {destination} is EUR {lowest_price}")
 
     return cheapest_flight

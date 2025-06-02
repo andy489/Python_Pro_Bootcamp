@@ -48,7 +48,7 @@ for destination in sheet_data:
         to_time=six_month_from_today
     )
     cheapest_flight = find_cheapest_flight(flights)
-    print(f"{destination['city']}: EUR{cheapest_flight.price}")
+    print(f"{destination['city']}: EUR {cheapest_flight.price}")
     # Slowing down requests to avoid rate limit
     time.sleep(2)
 
@@ -64,7 +64,7 @@ for destination in sheet_data:
             is_direct=False
         )
         cheapest_flight = find_cheapest_flight(stopover_flights)
-        print(f"Cheapest indirect flight price is: EUR{cheapest_flight.price}")
+        print(f"Cheapest indirect flight price is: EUR {cheapest_flight.price}")
 
     # ==================== Send Notifications and Emails  ====================
 
@@ -81,6 +81,8 @@ for destination in sheet_data:
                       f"departing on {cheapest_flight.out_date} and returning on {cheapest_flight.return_date}."
 
         print(f"Check your email. Lower price flight found to {destination['city']}!")
+
+        print(f"Message: {message}")
 
         # notification_manager.send_sms(message_body=message)
         # SMS not working? Try whatsapp instead.

@@ -16,7 +16,6 @@ class NotificationManager:
         self.whatsapp_number = os.environ["TWILIO_WHATSAPP_NUMBER"]
         # Set up Twilio Client and SMTP connection
         self.client = Client(os.environ['TWILIO_SID'], os.environ["TWILIO_AUTH_TOKEN"])
-        self.connection = smtplib.SMTP(os.environ["EMAIL_PROVIDER_SMTP_ADDRESS"])
 
     def send_sms(self, message_body):
         """
@@ -43,7 +42,7 @@ class NotificationManager:
             to=self.twilio_verified_number
         )
         # Prints if successfully sent.
-        print(message.sid)
+        print(f"Message sid: {message.sid}")
 
     # Is SMS not working for you or prefer whatsapp? Connect to the WhatsApp Sandbox!
     # https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn
@@ -53,14 +52,16 @@ class NotificationManager:
             body=message_body,
             to=f'whatsapp:{self.twilio_verified_number}'
         )
-        print(message.sid)
+        print(f"Message sid: {message.sid}")
 
     def send_emails(self, email_list, email_body):
-        with self.connection:
-            self.connection.starttls()
-            self.connection.login(self.email, self.email_password)
+        with smtplib.SMTP(self.smtp_address, 587) as server:
+            server.ehlo()  # Identify yourself to the server
+            server.starttls()  # Upgrade the connection to secure
+            server.ehlo()  # Re-identify after STARTTLS
+            server.login(self.email, self.email_password)
             for email in email_list:
-                self.connection.sendmail(
+                server.sendmail(
                     from_addr=self.email,
                     to_addrs=email,
                     msg=f"Subject:New Low Price Flight!\n\n{email_body}".encode('utf-8')
