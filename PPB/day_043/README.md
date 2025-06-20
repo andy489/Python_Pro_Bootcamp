@@ -2,7 +2,7 @@
 
 - Cascading Style Sheets (CSS)
 
-## Movie Ranking
+## Color Vocab Project
 
 <p align="center">
     <h3>
