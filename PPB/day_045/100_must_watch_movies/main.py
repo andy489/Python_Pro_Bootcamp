@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-SCRAPPING_URL = "https://www.empireonline.com/movies/features/best-movies-2/"
+SCRAPING_URL = "https://www.empireonline.com/movies/features/best-movies-2/"
 
 response = requests.get(SCRAPPING_URL)
 response.raise_for_status()

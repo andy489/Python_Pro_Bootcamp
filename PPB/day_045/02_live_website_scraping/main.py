@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-SCRAPPING_URL = "https://news.ycombinator.com/"
+SCRAPING_URL = "https://news.ycombinator.com/"
 
 response = requests.get(SCRAPPING_URL)
 response.raise_for_status()

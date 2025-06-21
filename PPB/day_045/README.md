@@ -6,6 +6,7 @@
 
 <p align="center">
     <h3>
-        <a href="100_must_watch_movies/main.py">100 Must Watch Movies</a>
+        <a href="100_must_watch_movies/main.py">Project</a>
+        <a href="100_must_watch_movies/movies.txt">Result</a>
     </h3>
 </p>
