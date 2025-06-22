@@ -28,3 +28,8 @@
         </div>
     </li>
 </ol>
+
+
+
+- Our Actual Newsletter: https://www.appbrewery.co/p/newsletter
+- Angela You's Web Dev Course: https://www.udemy.com/course/the-complete-web-development-bootcamp/?referralCode=F2958B9D9447BDFC8244
