@@ -9,22 +9,28 @@
 </h3>
 
 <ol>
-    <li style="font-size: 1.2em; width: 320px;">
+    <li>
         <div>Create a Spotify App:
-            <img src="assets/1.png" alt="create a spotify app"/>
+            <p></p>
+            <img src="assets/1.png" alt="create a spotify app"
+                style="font-size: 1.2em; width: 260px;"/>
         </div>
     </li>
-    <li style="font-size: 1.2em; width: 320px;">
+    <li>
         <div>
             If oauth2 is successful, 
             you should see the page below 
             show up automatically (be sure to click Agree):
-            <img src="assets/2.png" alt="successful oauth2">
+            <p></p>
+            <img src="assets/2.png" alt="successful oauth2"
+                style="font-size: 1.2em; width: 260px;"/>
         </div>
     </li>
-    <li style="font-size: 1.2em; width: 540px;">
+    <li>
         <div>Enjoy your Spotify Playlist:
-            <img src="assets/3.png" alt="successful oauth2">
+            <p></p>
+            <img src="assets/3.png" alt="successful oauth2"
+                style="font-size: 1.2em; width: 490px;"/>
         </div>
     </li>
 </ol>
