@@ -1,0 +1,6 @@
+beautifulsoup4==4.13.4
+spotipy==2.25.1
+requests==2.32.4
+python_dotenv==1.1.0
+
+# pip install -r requirements.txt
