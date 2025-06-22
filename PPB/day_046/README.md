@@ -8,15 +8,15 @@
     <a href="main.py">Project code</a>
 </h3>
 
-<ol>
-    <li style="font-size: 1.3em">
+<ol style="font-size: 1.3em">
+    <li>
         <div>Create a Spotify App:
             <p></p>
             <img src="assets/1.png" alt="create a spotify app"
                 style="font-size: 1.2em; width: 520px;"/>
         </div>
     </li>
-    <li style="font-size: 1.3em">
+    <li>
         <div>
             If oauth2 is successful, 
             you should see the page below 
@@ -26,7 +26,7 @@
                 style="font-size: 1.2em; width: 520px;"/>
         </div>
     </li>
-    <li style="font-size: 1.3em">
+    <li>
         <div>Enjoy your Spotify Playlist:
             <p></p>
             <img src="assets/3.png" alt="playlist"

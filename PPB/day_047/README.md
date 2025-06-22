@@ -10,7 +10,7 @@
 
 <ol>
     <li>
-        <div style="font-size: 1.2em">
+        <div style="font-size: 1.3em">
             Target product:
              <p></p>
             <div style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; max-width: 500px;">

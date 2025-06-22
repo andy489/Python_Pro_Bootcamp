@@ -9,9 +9,9 @@
     <a href="main.py">Project code</a>
 </h3>
 
-<ol>
+<ol style="font-size: 1.3em">
     <li>
-        <div style="font-size: 1.2em">
+        <div>
             If oauth2 is successful, 
             you should see the page below 
             show up automatically (be sure to click Agree):
