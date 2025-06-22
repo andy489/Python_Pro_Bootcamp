@@ -4,47 +4,26 @@
 
 ## Musical Time Machine Project
 
-<p align="center">
-    <h3>
-        <a href="main.py">Project code</a>
-    </h3>
-</p>
-
-<style type="text/css" rel="stylesheet">
-    li {
-        font-size: 1.2em;
-    }
-
-    li:nth-child(1), li:nth-child(2){
-        width: 40%;
-    }
-
-    p {
-        display: flex; 
-        justify-content: center;
-    }
-    
-    li:nth-child(3) {
-        width: 60%;
-    }   
-</style>
+<h3>
+    <a href="main.py">Project code</a>
+</h3>
 
 <ol>
-    <li>
+    <li style="font-size: 1.2em">
         <span>Create a Spotify App:</span>
-        <p>
+        <p style="width: 40%; display: flex; justify-content: center;">
             <img src="assets/1.png" alt="create a spotify app">
         </p>
     </li>
-    <li>
+    <li style="font-size: 1.2em">
         <span>If oauth2 is successful, you should see the page below show up automatically (be sure to click Agree):</span>
-        <p>
+        <p style="width: 40%; display: flex; justify-content: center;">
             <img src="assets/2.png" alt="successful oauth2">
         </p>
     </li>
-    <li>
+    <li style="font-size: 1.2em">
         <span>Enjoy your Spotify Playlist:</span>
-        <p>
+        <p style="width: 60%; display: flex; justify-content: center;">
             <img src="assets/3.png" alt="successful oauth2">
         </p>
     </li>
