@@ -24,6 +24,7 @@
                         border-radius: 3px; display: inline-block; margin-top: 10px;">
                     View on Amazon (Practice Page)
                 </a>
+                &nbsp;&nbsp;
                 <a href="https://www.amazon.com/dp/B075CYMYK6" 
                     style="background: #FF9900; color: white; padding: 5px 10px; text-decoration: none; 
                         border-radius: 3px; display: inline-block; margin-top: 10px;">
