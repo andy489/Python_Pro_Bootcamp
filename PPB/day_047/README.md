@@ -59,3 +59,7 @@
 [View on Amazon (Practice Page)](https://www.amazon.com/dp/B075CYMYK6)
 
 <a href="https://www.amazon.com/dp/B075CYMYK6" style="background-color:#232F3E;color:white;padding:5px 10px;text-decoration:none;border-radius:3px;display:inline-block">View on Amazon (Practice Page)</a>
+
+[![View on Amazon](https://img.shields.io/badge/View_on_Amazon_(Practice_Page)-232F3E?style=for-the-badge&logo=amazon&logoColor=white)](https://www.amazon.com/dp/B075CYMYK6)
+
+<a href="https://www.amazon.com/dp/B075CYMYK6" style="background-color:#232F3E;color:white;padding:8px 16px;text-decoration:none;border-radius:4px;display:inline-block;font-weight:bold;text-align:center;width:200px">View on Amazon (Practice Page)</a>
