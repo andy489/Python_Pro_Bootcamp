@@ -15,7 +15,7 @@
             Clicker Bot Snapshot:
             <p></p>
             <img src="assets/1.png" alt="successful oauth2"
-                style="font-size: 1.2em; width: 420px;"/>
+                style="font-size: 1.2em; width: 720px;"/>
         </div>
     </li>
     <li>
