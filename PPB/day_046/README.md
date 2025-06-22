@@ -10,22 +10,22 @@
 
 <ol>
     <li style="font-size: 1.2em; width: 320px;">
-        <span>Create a Spotify App:</span>
-        <p style="width: 320px; display: flex; justify-content: center;">
-            <img src="assets/1.png" alt="create a spotify app">
-        </p>
+        <div>Create a Spotify App:
+            <img src="assets/1.png" alt="create a spotify app"/>
+        </div>
     </li>
     <li style="font-size: 1.2em; width: 320px;">
-        <span>If oauth2 is successful, you should see the page below show up automatically (be sure to click Agree):</span>
-        <p style="display: flex; justify-content: center;">
+        <div>
+            If oauth2 is successful, 
+            you should see the page below 
+            show up automatically (be sure to click Agree):
             <img src="assets/2.png" alt="successful oauth2">
-        </p>
+        </div>
     </li>
     <li style="font-size: 1.2em; width: 540px;">
-        <span>Enjoy your Spotify Playlist:</span>
-        <p style="display: flex; justify-content: center;">
+        <div>Enjoy your Spotify Playlist:
             <img src="assets/3.png" alt="successful oauth2">
-        </p>
+        </div>
     </li>
 </ol>
 
