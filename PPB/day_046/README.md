@@ -9,14 +9,14 @@
 </h3>
 
 <ol>
-    <li>
+    <li style="font-size: 1.3em">
         <div>Create a Spotify App:
             <p></p>
             <img src="assets/1.png" alt="create a spotify app"
                 style="font-size: 1.2em; width: 520px;"/>
         </div>
     </li>
-    <li>
+    <li style="font-size: 1.3em">
         <div>
             If oauth2 is successful, 
             you should see the page below 
@@ -26,10 +26,10 @@
                 style="font-size: 1.2em; width: 520px;"/>
         </div>
     </li>
-    <li>
+    <li style="font-size: 1.3em">
         <div>Enjoy your Spotify Playlist:
             <p></p>
-            <img src="assets/3.png" alt="successful oauth2"
+            <img src="assets/3.png" alt="playlist"
                 style="font-size: 1.2em; width: 820px;"/>
         </div>
     </li>
