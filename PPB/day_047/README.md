@@ -55,3 +55,7 @@
          border-radius: 3px; display: inline-block; margin-top: 10px;">
         View on Amazon (Practice Page)
 </a>
+
+[View on Amazon (Practice Page)](https://www.amazon.com/dp/B075CYMYK6)
+
+<a href="https://www.amazon.com/dp/B075CYMYK6" style="background-color:#232F3E;color:white;padding:5px 10px;text-decoration:none;border-radius:3px;display:inline-block">View on Amazon (Practice Page)</a>
