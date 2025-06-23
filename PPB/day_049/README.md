@@ -11,7 +11,7 @@
 <ul style="font-size: 1.3em">
     <li>
         <div>
-            Selenium Bot Work:
+            Your selenium bot that applies for jobs for you because you're a lazy programmer:
             <p></p>
             <img src="assets/1.gif" alt=""
                 style="font-size: 1.2em; width: 720px;"/>
