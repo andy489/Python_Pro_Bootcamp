@@ -1,6 +1,6 @@
 ## Topic
 
-- Auto Tinder Bot
+- Auto Swipe Tinder Bot
 
 ## Tinder Bot
 
