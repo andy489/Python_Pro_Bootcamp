@@ -16,7 +16,7 @@
 <ul style="font-size: 1.3em">
     <li>
         <div>
-            Your selenium bot that swipes left for you
+            Your Tinder bot that swipes left or right for you
         </div>
     </li>
 </ul>
