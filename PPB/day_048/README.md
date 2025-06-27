@@ -5,11 +5,11 @@
 
 ## Cookie Clicker Bot
 
-<h3>
+<h4>
     <a href="cookie_clicker_bot/main.py">Project code</a>
-</h3>
+</h4>
 
-<ul style="font-size: 1.3em">
+<ul style="font-size: 1.2em">
     <li>
         <div>
             Clicker Bot Snapshot:

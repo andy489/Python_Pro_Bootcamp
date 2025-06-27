@@ -4,16 +4,16 @@
 
 ## Tinder Bot
 
-<h3>
+<h4>
     <p>
         <a href="main.py">main.py</a>
     </p>
     <p>
         <a href="tinder_bot.py">tinder_bot.py</a>
     </p>
-</h3>
+</h4>
 
-<ul style="font-size: 1.3em">
+<ul style="font-size: 1.2em">
     <li>
         <div>
             Your Tinder bot that swipes left or right for you

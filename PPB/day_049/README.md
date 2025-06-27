@@ -4,11 +4,11 @@
 
 ## Job Applier Bot
 
-<h3>
+<h4>
     <a href="main.py">Project code</a>
-</h3>
+</h4>
 
-<ul style="font-size: 1.3em">
+<ul style="font-size: 1.2em">
     <li>
         <div>
             Your selenium bot that applies for jobs for you because you're a lazy programmer:

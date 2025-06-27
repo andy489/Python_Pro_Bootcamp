@@ -4,11 +4,11 @@
 
 ## Musical Time Machine Project
 
-<h3>
+<h4>
     <a href="main.py">Project code</a>
-</h3>
+</h4>
 
-<ol style="font-size: 1.3em">
+<ol style="font-size: 1.2em">
     <li>
         <div>Create a Spotify App:
             <p></p>

@@ -4,13 +4,13 @@
 
 ## Amazon Price Tracker Project
 
-<h3>
+<h4>
     <a href="main.py">Project code</a>
-</h3>
+</h4>
 
 <ol>
     <li>
-        <div style="font-size: 1.3em">
+        <div style="font-size: 1.2em">
             Target product:
              <p></p>
             <div style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; max-width: 500px;">
@@ -41,7 +41,7 @@
                 style="font-size: 1.2em; width: 420px;"/>
         </div>
     </li>
-    <li style="font-size: 1.3em">
+    <li style="font-size: 1.2em">
         <div>Result Contents:
             <p></p>
             <img src="assets/3.png" alt="content"

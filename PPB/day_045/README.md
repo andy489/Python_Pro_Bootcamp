@@ -5,10 +5,10 @@
 ## 100 Must Watch Movies
 
 <p align="center">
-    <h3>
+    <h4>
         <a href="100_must_watch_movies/main.py">Project</a>
-    </h3>
-    <h3>
+    </h4>
+    <h4>
         <a href="100_must_watch_movies/movies.txt">Result</a>
-    </h3>
+    </h4>
 </p>
