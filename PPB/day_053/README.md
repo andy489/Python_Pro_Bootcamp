@@ -15,7 +15,7 @@
 </h2>
 <div style="font-size: 1.2em">
     <p>
-        First, you need to create a new form in Google Forms,
+        First, you need to create a new form in Google Forms.
     </p>
     <ol>
         <li>
