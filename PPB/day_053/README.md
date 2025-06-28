@@ -10,17 +10,6 @@
     </p>
 </h3>
 
-<ul style="font-size: 1.2em">
-    <li>
-        <div>
-            Zillow Data Entry Project:
-            <p></p>
-            <img src="assets/1.gif" alt="zillow data entry"
-                style="font-size: 1.2em; width: 720px;"/>
-        </div>
-    </li>
-</ul>
-
 <h2>
     Set up your own Google Form
 </h2>
