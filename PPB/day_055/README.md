@@ -5,7 +5,7 @@
 - Parsing URLs
 - Flask Debugging
 
-## Higher Lower Game
+## Higher-Lower Game
 
 <h3>
     <p>
