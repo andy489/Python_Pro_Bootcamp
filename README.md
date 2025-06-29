@@ -2,7 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
-|54|Intermediate+|Libraries and Frameworks<br>Command Line<br>Python Decorators<br>Web Development with Flask|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_054/day_054.ipynb)|___<ul><li>[**hello_flask.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_054/hello_flask.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_054)|
+|54|Intermediate+|Libraries and Frameworks<br>Command Line<br>Python Decorators<br>Web Development with Flask|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_054/day_054.ipynb)|Introduction to Web Development with Flask<ul><li>[**hello_flask.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_054/hello_flask.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_054)|
 |53|Intermediate+|Data Entry Job Automation - Capstone Project|-|Zillow Data Entry<ul><li>[**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_053/main.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_053)|
 |52|Intermediate+|Instagram Follower Bot|-|Instagram Bot<ul><li>[**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_052/main.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_052)|
 |51|Intermediate+|Internet Speed Twitter/X Bot|-|Twitter/X Bot<ul><li>[**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_051/main.py)</li></ul>|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_051)|
