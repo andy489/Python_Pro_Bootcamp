@@ -27,22 +27,32 @@
             <a href="https://docs.google.com/forms/">https://docs.google.com/forms/</a>
             and create your own form:
             <div>
+                <br/>
                 <img src="assets/01.png" alt="google forms" style="width: 540px;"/>
+                <br/>
+                <br/>
             </div>
         </li>
         <li>
             Add 3 questions to the form, make all questions "short answer":
             <div>
+                <br/>
                 <img src="assets/02.png" alt="create form" style="width: 540px;"/>
+                <br/>
+                <br/>
             </div>
         </li>
         <li>
             Click send and copy the link address of the form. You will need to use this in your program.
             <div>
+                <br/>
                 <img src="assets/03.png" alt="publish form" style="width: 540px;"/>
+                <br/>
             </div>
             <div>
+                <br/>
                 <img src="assets/04.png" alt="get url" style="width: 540px;"/>
+                <br/>
             </div>
         </li>
     </ol>
@@ -57,7 +67,9 @@
             <a href="https://appbrewery.github.io/Zillow-Clone/">https://appbrewery.github.io/Zillow-Clone/</a>
             and see how the website is structured. This is where you'll be scraping the data from:
             <div>
+                <br/>
                 <img src="assets/05.png" alt="zillow search" style="width: 540px;"/>
+                <br/>
             </div>
         </li>
     </ol>
@@ -74,13 +86,18 @@
             Create a list of links for all the listings you scraped. e.g.
         </li>
         <div>
+            <br/>
             <img src="assets/06.png" alt="list of links" style="width: 540px;"/>
+            <br/>
+            <br/>
         </div>
         <li>
             Create a list of prices for all the listings you scraped. e.g.
         </li>
         <div>
+            <br/>
             <img src="assets/07.png" alt="list of addresses" style="width: 540px;"/>
+            <br/>
         </div>
     </ul>   
     Clean up the strings, by removing any "+" symbols and other information so that you are only left with a dollar price. The price should look like "$1,234" instead of "$1,234+ /mo"
@@ -89,6 +106,7 @@
             Create a list of addresses for all the listings you scraped. e.g.
         </li>
         <div>
+            <br/>
             <img src="assets/08.png" alt="list of prices" style="width: 540px;"/>
         </div>
     </ul> 
@@ -103,13 +121,19 @@
             Use Selenium to fill in the form you created (step 1,2,3 above). Each listing should have its price/address/link added to the form. You will need to fill in a new form for each new listing. e.g.
         </li>
         <div>
+            <br/>
             <img src="assets/09.gif" alt="requests" style="width: 540px;"/>
+            <br/>
+            <br/>
         </div>
         <li>
             Collect responses (observe selenium bot result):
         </li>
         <div>
+            <br/>
             <img src="assets/10.gif" alt="collect" style="width: 540px;"/>
+            <br/>
+            <br/>
         </div>
         Once all the data has been filled in, click on the "Sheet" icon to create a Google Sheet from the responses to the Google Form. You should end up with a spreadsheet with all the details from the properties.
     </ul>
@@ -125,6 +149,7 @@
     You should end up with a spreadsheet that looks something like this.
 </div>
 <div>
+    <br/>
     <img src="assets/12.png" alt="spreadsheet" style="width: 540px;"/>
 </div>
 <h3>

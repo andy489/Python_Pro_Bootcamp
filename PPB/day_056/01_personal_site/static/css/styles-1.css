@@ -1,0 +1,325 @@
+/* Modern styling with two-column layout */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #6c757d;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 30px;
+    color: var(--text-color);
+    background: white;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: 600;              /* Bolder appearance */
+  color: #2a80b9;                /* A refined light blue */
+  margin: 0.3rem 0;
+  font-family: 'Roboto Condensed', serif; /* Classier serif font */
+  letter-spacing: 0.5px;         /* Slight spacing for elegance */
+}
+
+.profile-pic {
+    width: 220px;   /* Large size for desktop */
+    height: 220px;  /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);  /* Thicker border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Added shadow for depth */
+}
+
+/* Adjust for mobile view */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 180px;   /* Still large on mobile */
+        height: 180px;
+        border-width: 3px;
+    }
+}
+
+/* Adjust container spacing to accommodate larger image */
+.profile-container {
+    gap: 40px;  /* More space between image and text */
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+}
+
+.header-text {
+    flex: 1;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info i {
+    color: var(--accent-color);
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 25px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--medium-gray);
+    color: var(--primary-color);
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.page-break {
+    page-break-after: always;
+}
+
+/* Two-column layout for courses and skills */
+.two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.column {
+    break-inside: avoid;
+}
+
+.course-category {
+    margin-bottom: 15px;
+}
+
+.course-category-name {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.skills-category {
+    margin-bottom: 15px;
+}
+
+.skills-category-name {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+/* Project styling */
+.project {
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.project-tech {
+    font-style: italic;
+    color: var(--dark-gray);
+}
+
+/* Experience styling */
+.experience {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.company-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.company-name a {
+    text-decoration: none;
+}
+
+.company-name a img {
+    vertical-align: middle; /* keep aligned */
+    border: none;           /* remove any image border */
+}
+
+.company-logo {
+    width: 3rem;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 8px;
+    border: 1px solid #383838;  /* Graphite color */
+    border-radius: 6px;
+    padding: 1px;
+    background-color: #f0f0f0;   /* Light gray background */
+    display: inline-block;       /* ensure border shows correctly */
+}
+
+.larger-logo-4 {
+    width: 4rem;
+}
+
+.larger-logo-6 {
+    width: 6rem;
+}
+
+.logo-bg-white {
+    background-color: white;
+}
+
+.md-05 {
+    margin-bottom: 0.5em
+}
+
+/* Custom bullets */
+ul.custom-bullets {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.custom-bullets li {
+    position: relative;
+    padding-left: 20px;
+}
+
+ul.custom-bullets li:before {
+    content: "■";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    top: -1px;
+    font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .two-column-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media print {
+    body {
+        padding: 15mm;
+        font-size: 12pt;
+    }
+
+    .page-break {
+        display: block;
+        page-break-after: always;
+    }
+
+    .two-column-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
