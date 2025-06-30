@@ -16,14 +16,13 @@
         <li>
             Head over to the course resources and download the starting files for this project.
         </li>
-        <br/>
         <div style="text-align: center;">
             <img src="assets/1.png" alt="" style="width: 180px;">
         </div>
+        <br/>
         <li>
             Run the <b>server.py</b> file, and you should see the following styling and website rendered:
         </li>
-        <br/>
         <div style="text-align: center;">
             <img src="assets/2.png" alt="" style="width: 720px;">
         </div>
@@ -35,7 +34,6 @@
             </a>
             , render all the blogs' title and subtitles on the home page. e.g
         </li>
-        <br/>
         <div style="text-align: center;">
             <img src="assets/3.png" alt="" style="width: 720px;">
         </div>
