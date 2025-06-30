@@ -1,18 +1,20 @@
-body{
- background: #efeff3;
- margin: 0;
- font-family: 'Raleway', sans-serif;
- -webkit-font-smoothing: antialiased;
+body {
+  background: #efeff3;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
   color:#212121;
 }
-.wrapper{
+
+.wrapper {
   position: relative;
   clear:both;
   margin: 0 auto 75px auto;
   width: 100%;
   overflow: hidden;
 }
-.top{
+
+.top {
   background: #4e89ae;
   height: 180px;
   border-top: 20px solid #43658b;
@@ -29,12 +31,12 @@ body{
   font-weight:500;
 }
 
-.content{
-    margin: -80px auto 100px;
+.content {
+  margin: -80px auto 100px;
   padding-bottom: 20px;
 }
 
-.card{
+.card {
   position: relative;
   background: #fff;
   padding:50px;
