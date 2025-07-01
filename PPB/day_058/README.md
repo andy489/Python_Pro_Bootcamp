@@ -10,6 +10,9 @@
         <a href="tin_dog/index.html">index.html</a>
     </p>
 </h3>
+<div style="text-align: center;">
+    <img src="assets/1.png" alt="TinDog" style="width: 640px;">
+</div>
 
 <h3>
     Using Jinja to Produce Dynamic HTML Pages
