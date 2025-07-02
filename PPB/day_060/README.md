@@ -43,6 +43,6 @@
         Result: 
     </p>
     <div style="text-align: center;">
-        <img src="assets/2.gif" alt="" style="width: 880px;">
+        <img src="assets/2.gif" alt="" style="width: 940px;">
     </div>
 </div>
