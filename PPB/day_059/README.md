@@ -1,4 +1,4 @@
-## Blog Capstone Project Part 2 - Adding Styling
+## Making the Contact Form Work
 
 <h3>
     <p>
@@ -6,10 +6,10 @@
     </p>
 </h3>
 <h3>
-    Blog upgrade
+    Contact Form
 </h3>
 <div style="text-align: center;">
-    <img src="assets/1.png" alt="" style="width: 720px;">
+    <img src="assets/1.png" alt="" style="width: 420px;">
 </div>
 
 <div style="font-size:1.2em">

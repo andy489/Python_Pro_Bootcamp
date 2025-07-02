@@ -23,6 +23,14 @@
         So the goal for today is to understand how HTML forms are submitted and how to use the data from the form to 
         actually send an email to ourselves with the data submitted by the user.
     </p>
+    <ul>
+        <li>
+            <a href="https://www.w3schools.com/tags/att_form_method.asp">HTML &lt;form&gt; method Attribute</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/tags/att_form_action.asp">HTML &lt;form&gt; action Attribute</a>
+        </li>
+    </ul>
 </div>
 
 <h3>Sending Email with smtplib</h3>
@@ -35,10 +43,6 @@
         Result: 
     </p>
     <div style="text-align: center;">
-        <img src="assets/2.gif" alt="" style="width: 770px;">
+        <img src="assets/2.gif" alt="" style="width: 880px;">
     </div>
 </div>
-
-https://www.w3schools.com/tags/att_form_method.asp
-
-https://www.w3schools.com/tags/att_form_action.asp
