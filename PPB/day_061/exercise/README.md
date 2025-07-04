@@ -113,12 +113,93 @@
             Finally, did you spot the <code>SubmitField</code> when you were looking at the 
             <a href="https://wtforms.readthedocs.io/en/3.0.x/fields/#basic-fields">documentation</a> in Step 1 ? 
             This can be used to replace the submit input/button.
+            <br/>
+            <br/>
             <div>
                 <img src="../assets/13.png" alt="" style="width: 620px;">
             </div>
+            <br/>
             <div>
                 <img src="../assets/14.png" alt="" style="width: 620px;">
             </div>
         </li>
+    </ol>
+    <h3>Adding Validation to Forms with Flask-WTF</h3>
+    <p>
+        One of the biggest reasons why we would choose WTForms over HTML Forms is the built-in validation. 
+        Instead of us having to write our own validation code e.g. emails should contain a "@" and a "." 
+        to be valid or make sure that passwords are minimum of 8 characters, we can use all these 
+        validation rules straight out of the box from WTForms.
+    </p>
+    <ol>
+        <li>We can add validator objects when we create each field in our form. e.g.</li>
+        <br/>
+        <div>
+            <img src="../assets/15.png" alt="" style="width: 620px;">
+        </div>
+        <p><a href="https://wtforms.readthedocs.io/en/3.0.x/crash_course/#validators">Documentation</a></p>
+        <p>
+            The <code>validators</code> parameter accepts a <b>List</b> of validator <b>Objects</b>. DataRequired 
+            makes the two fields required fields, so the user must type something, otherwise an error will be generated.
+        </p>
+        <p>
+            When a form is submitted, there may be a number of errors, so a List of <code>errors</code> can be 
+            generated and passed over to our form HTML as a property on the field which generated the error, e.g.
+        </p>
+        <p><code>form.&lt;field&gt;.errors</code></p>
+        <li>We can tap into these errors and loop through them to show some text when an error appears.</li>
+        <p><a href="https://wtforms.readthedocs.io/en/3.0.x/crash_course/#displaying-errors">Documentation</a></p>
+        <div>
+            <img src="../assets/16.png" alt="" style="width: 620px;">
+        </div>
+        <li>The final step is to tell our form to validate the user's entry when they hit submit. 
+        So we have to edit our route and make sure it is able to respond to <code>POST</code> requests and then 
+        to <code>validate_on_submit().</code>
+        </li>
+        <br/>
+        <div>
+            <img src="../assets/17.png" alt="" style="width: 620px;">
+        </div>
+        <p>
+            If you tried to test your form at the moment, you will see that if you leave a field empty, 
+            it might give you a pop-up e.g. on Chrome:
+        </p>
+        <div>
+            <img src="../assets/18.png" alt="" style="width: 280px;">
+        </div>
+        <p>
+            This behaviour is not from our validator, in fact it's a built-in mechanism that varies from 
+            browser to browser. You'll see something different on Firefox or Safari. But If your user is 
+            running Internet Explorer, they won't see any validation.
+        </p>
+        <li>
+            In order to make sure that we are giving all users field validation, we have to switch off the browser 
+            validation, and we do that with an attribute on the form element called <code>novalidate</code>.
+        </li>
+        <br/>
+        <div>
+            <img src="../assets/19.png" alt="" style="width: 620px;">
+        </div>
+        <p>
+            Now test your validation, it should give you a warning in red if you leave any field empty 
+            and click "Log In". e.g.
+        </p>
+        <div>
+            <img src="../assets/20.png" alt="" style="width: 360px;">
+        </div>
+        <p>
+            CHALLENGE: Using <a href="https://wtforms.readthedocs.io/en/3.0.x/validators/#module-wtforms.validators">
+            the documentation on WTForm validators</a>, add <code>Email</code> validation to the email field 
+            so that you must type a <code>valid email</code> (with "@" and ".") otherwise you get an error. 
+            Also add <code>Length</code> validation to the password, so you must type at least <b>8 characters</b>.
+        </p>
+        <p>e.g. Email without "@" and 4 character password:</p>
+                <div>
+            <img src="../assets/20.png" alt="" style="width: 360px;">
+        </div>
+        <div>
+            <img src="../assets/20.png" alt="" style="width: 360px;">
+        </div>
+        <li></li>
     </ol>
 </div>
