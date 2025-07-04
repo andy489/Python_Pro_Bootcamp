@@ -243,4 +243,12 @@
     <p>then show them the <b>success.html</b> page.</p>
     <p>Otherwise, show them the <b>denied.html</b> page</p>
     <p>e.g.</p>
+    <div>
+        <h4>Access Denied</h4>
+        <img src="../assets/25.gif" alt="" style="width: 380px;">
+    </div>
+    <div>
+        <h4>Access Granted</h4>
+        <img src="../assets/26.gif" alt="" style="width: 380px;">
+    </div>
 </div>
