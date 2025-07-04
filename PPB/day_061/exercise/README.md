@@ -165,7 +165,7 @@
             it might give you a pop-up e.g. on Chrome:
         </p>
         <div>
-            <img src="../assets/18.png" alt="" style="width: 280px;">
+            <img src="../assets/18.png" alt="" style="width: 300px;">
         </div>
         <p>
             This behaviour is not from our validator, in fact it's a built-in mechanism that varies from 
@@ -185,7 +185,7 @@
             and click "Log In". e.g.
         </p>
         <div>
-            <img src="../assets/20.png" alt="" style="width: 360px;">
+            <img src="../assets/20.png" alt="" style="width: 300px;">
         </div>
         <p>
             CHALLENGE: Using <a href="https://wtforms.readthedocs.io/en/3.0.x/validators/#module-wtforms.validators">
@@ -194,12 +194,53 @@
             Also add <code>Length</code> validation to the password, so you must type at least <b>8 characters</b>.
         </p>
         <p>e.g. Email without "@" and 4 character password:</p>
-                <div>
-            <img src="../assets/20.png" alt="" style="width: 360px;">
+        <div>
+            <img src="../assets/21.png" alt="" style="width: 360px;">
         </div>
         <div>
-            <img src="../assets/20.png" alt="" style="width: 360px;">
+            <img src="../assets/22.png" alt="" style="width: 360px;">
         </div>
-        <li></li>
+        <div>
+            <img src="../assets/23.png" alt="" style="width: 360px;">
+        </div>
+        <div>
+            <img src="../assets/24.png" alt="" style="width: 300px;">
+        </div>
     </ol>
+    <h3>
+        Receiving Form Data with WTForms
+    </h3>https://wtforms.readthedocs.io/en/3.0.x/crash_course/#how-forms-get-data
+    <p>
+        We saw that when using a basic HTML form, we can use the request object from Flask to access 
+        the key-value pairs that were entered into the form when the POST request was made.
+    </p>
+    <p>
+        With WTForms, it's even easier to get hold of the form data. All you have to do is to tap into the
+    </p>
+    <p><code>&lt;form_object&gt;.&lt;form_field&gt;.data</code></p>
+    <p><a href="https://wtforms.readthedocs.io/en/3.0.x/crash_course/#how-forms-get-data">Documentation</a></p>
+    <p>
+        But one thing we should check before printing the field data is whether if the form has been submitted 
+        (POST request) or if it's GET request when the form is being rendered.
+    </p>
+    <p>Previously we used</p>
+    <p><code>if request.method == "POST"</code></p>
+    <p>
+        Now, we're simply going to check the return value of <code>validate_on_submit()</code> which will be 
+        <code>True</code> if validation was <b>successful after the user submitted the form</b>, 
+        or <code>False</code> if it failed.
+    </p>
+    <div>
+        <img src="../assets/24.png" alt="" style="width: 300px;">
+    </div>
+    <p>
+        CHALLENGE: Update the <code>/login</code> route in <b>main.py</b> so that if the form was <b>submitted</b> and 
+        <b>validated</b> and their <b>credentials</b> matched the following:
+    </p>
+    <p>email: <b>admin@email.com</b></p>
+    <p>password: <b>12345678</b></p>
+    <p>email: <b>admin@email.com</b></p>
+    <p>then show them the <b>success.html</b> page.</p>
+    <p>Otherwise, show them the <b>denied.html</b> page</p>
+    <p>e.g.</p>
 </div>
