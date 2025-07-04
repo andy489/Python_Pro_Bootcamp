@@ -27,7 +27,9 @@ def login():
     login_form = LoginForm()
     if login_form.validate_on_submit():
         return redirect('success')
-    return render_template(template_name_or_list="login.html", form=login_form)
+    else:
+        return redirect('denied')
+        # return render_template(template_name_or_list="login.html", form=login_form)
 
 
 if __name__ == '__main__':
