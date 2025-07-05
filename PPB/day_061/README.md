@@ -2,7 +2,7 @@
 
 <h3>
     <p>
-        <a href="./main.py">main.py</a>
+        <a href="./server.py">server.py</a>
     </p>
 </h3>
 
@@ -60,14 +60,18 @@
     <h2>Code Improvements for Our WTForms</h2>
     <h3>A Few Code Improvements</h3>
     <ol>
+        <br/>
         <li>We can change the <code>password</code> input to use a <code>PasswordField</code> from WTForms, this will 
         obscure the text typed into the input.</li>
+        <br/>
         <div style="text-align: center;">
             <img src="assets/5.png" alt="" style="width: 620px;">
         </div>
+        <br/>
         <div style="text-align: center;">
             <img src="assets/6.png" alt="" style="width: 620px;">
         </div>
+        <br/>
         <div style="text-align: center;">
             <img src="assets/7.png" alt="" style="width: 620px;">
         </div>
@@ -76,9 +80,12 @@
                 https://wtforms.readthedocs.io/en/3.0.x/fields/#basic-fields
             </a>
         </p>
-        <li>The arguments given when creating a <code>StringField</code> or <code>PasswordField</code> is for the 
-            <code>label</code> property of the form field. Even though the Quickstart doesn't add it, I prefer adding 
-            the keyword argument when it's not clear what the argument is for.
+        <li>
+            <p>
+                The arguments given when creating a <code>StringField</code> or <code>PasswordField</code> is for the 
+                <code>label</code> property of the form field. Even though the Quickstart doesn't add it, I prefer adding 
+                the keyword argument when it's not clear what the argument is for.
+            <p/>
             <div>
                 <img src="assets/8.png" alt="" style="width: 620px;">
             </div>
@@ -91,8 +98,10 @@
             </div>
         </li>
         <li>
-            You might have already done this, but in the Quickstart, they set the form action to <code>"/"</code>, 
-            which is a static path. It's always a good idea to use dynamically built urls like this:
+            <p>
+                You might have already done this, but in the Quickstart, they set the form action to <code>"/"</code>, 
+                which is a static path. It's always a good idea to use dynamically built urls like this:
+            <p/>
             <div>
                 <img src="assets/10.png" alt="" style="width: 620px;">
             </div>
@@ -106,7 +115,7 @@
             <p>This will result in the following layout:</p>
             <br/>
             <div>
-                <img src="assets/12.png" alt="" style="width: 260px;">
+                <img src="assets/12.png" alt="" style="width: 320px;">
             </div>
         </li>
         <li>
@@ -165,7 +174,7 @@
             it might give you a pop-up e.g. on Chrome:
         </p>
         <div>
-            <img src="assets/18.png" alt="" style="width: 300px;">
+            <img src="assets/18.png" alt="" style="width: 390px;">
         </div>
         <p>
             This behaviour is not from our validator, in fact it's a built-in mechanism that varies from 
@@ -185,7 +194,7 @@
             and click "Log In". e.g.
         </p>
         <div>
-            <img src="assets/20.png" alt="" style="width: 300px;">
+            <img src="assets/20.png" alt="" style="width: 490px;">
         </div>
         <p>
             CHALLENGE: Using <a href="https://wtforms.readthedocs.io/en/3.0.x/validators/#module-wtforms.validators">
@@ -195,16 +204,16 @@
         </p>
         <p>e.g. Email without "@" and 4 character password:</p>
         <div>
-            <img src="assets/21.png" alt="" style="width: 360px;">
+            <img src="assets/21.png" alt="" style="width: 660px;">
         </div>
         <div>
-            <img src="assets/22.png" alt="" style="width: 360px;">
+            <img src="assets/22.png" alt="" style="width: 660px;">
         </div>
         <div>
-            <img src="assets/23.png" alt="" style="width: 360px;">
+            <img src="assets/23.png" alt="" style="width: 660px;">
         </div>
         <div>
-            <img src="assets/24.png" alt="" style="width: 300px;">
+            <img src="assets/24.png" alt="" style="width: 490px;">
         </div>
     </ol>
     <h3>
@@ -231,7 +240,7 @@
         or <code>False</code> if it failed.
     </p>
     <div>
-        <img src="assets/24.png" alt="" style="width: 300px;">
+        <img src="assets/24.png" alt="" style="width: 490px;">
     </div>
     <p>
         CHALLENGE: Update the <code>/login</code> route in <b>main.py</b> so that if the form was <b>submitted</b> and 
@@ -245,11 +254,11 @@
     <p>e.g.</p>
     <div>
         <h4>Access Denied</h4>
-        <img src="assets/25.gif" alt="" style="width: 380px;">
+        <img src="assets/25.gif" alt="" style="width: 540px;">
     </div>
     <div>
         <h4>Access Granted</h4>
-        <img src="assets/26.gif" alt="" style="width: 380px;">
+        <img src="assets/26.gif" alt="" style="width: 540px;">
     </div>
     <h3>Inheriting Templates Using Jinja2</h3>
     <p>
@@ -279,7 +288,7 @@
         For example, if we create a base.html file that has the following code:
     </p>
     <div>
-        <img src="assets/27.png" alt="" style="width: 320px;">
+        <img src="assets/27.png" alt="" style="width: 490px;">
     </div>  
     <p>
         It has predefined areas (or blocks) where new content can be inserted by a child webpage inheriting 
@@ -289,7 +298,7 @@
         <li>
             We could re-write the success.html page to inherit from this base.html template:
             <div>
-                <img src="assets/28.png" alt="" style="width: 520px;">
+                <img src="assets/28.png" alt="" style="width: 660px;">
             </div>
             <div>
                 <p>#1. This line of code tells the templating engine (Jinja) to use "base.html" as the template for this page.</p>
@@ -316,9 +325,8 @@
     </div>
     <ol start="3">
         <li>Add the following code to your base.html:</li>
-        <br/>
         <div style="text-align: center;">
-            <img src="assets/29.png" alt="" style="width: 280px;">
+            <img src="assets/29.png" alt="" style="width: 480px;">
         </div>
         <p>We named this block "<code>styling</code>" but we can call it anything we want.</p>
         <p>We just need to make sure that we close all blocks with <code>{% endblock %}</code> </p>
@@ -369,7 +377,7 @@
             documentation</a> to convert our denied.html, success.html, login.html and index.html 
             to use Bootstrap as the template.
             <div style="text-align: center;">
-                <img src="assets/32.png" alt="" style="width: 540px;">
+                <img src="assets/32.png" alt="" style="width: 770px;">
             </div>
             <ul>
                 <li>Follow the documentation to initialise bootstrap-flask in your main.py</li>
@@ -378,7 +386,7 @@
         </li>
         <p>This is what your website should look like if you complete the challenge:</p>
         <div style="text-align: center;">
-            <img src="assets/33.gif" alt="" style="width: 380px;">
+            <img src="assets/33.gif" alt="" style="width: 640px;">
         </div>
     </ol>
     <h2>Bootstrap-Flask Supports WTForms</h2>
