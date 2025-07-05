@@ -7,7 +7,7 @@
 </h3>
 
 <div style="text-align: center;">
-    <img src="../assets/3.png" alt="" style="width: 720px;">
+    <img src="assets/3.png" alt="" style="width: 720px;">
 </div>
 
 <div style="font-size:1.2em">
@@ -55,7 +55,7 @@
         This is what you're aiming for:
     </p>
     <div style="text-align: center;">
-        <img src="../assets/4.png" alt="" style="width: 620px;">
+        <img src="assets/4.png" alt="" style="width: 620px;">
     </div>
     <h2>Code Improvements for Our WTForms</h2>
     <h3>A Few Code Improvements</h3>
@@ -63,13 +63,13 @@
         <li>We can change the <code>password</code> input to use a <code>PasswordField</code> from WTForms, this will 
         obscure the text typed into the input.</li>
         <div style="text-align: center;">
-            <img src="../assets/5.png" alt="" style="width: 620px;">
+            <img src="assets/5.png" alt="" style="width: 620px;">
         </div>
         <div style="text-align: center;">
-            <img src="../assets/6.png" alt="" style="width: 620px;">
+            <img src="assets/6.png" alt="" style="width: 620px;">
         </div>
         <div style="text-align: center;">
-            <img src="../assets/7.png" alt="" style="width: 620px;">
+            <img src="assets/7.png" alt="" style="width: 620px;">
         </div>
         <p>There are plenty of other fields you can read about in the WTForms documentation:
             <a href="https://wtforms.readthedocs.io/en/3.0.x/fields/#basic-fields">
@@ -80,33 +80,33 @@
             <code>label</code> property of the form field. Even though the Quickstart doesn't add it, I prefer adding 
             the keyword argument when it's not clear what the argument is for.
             <div>
-                <img src="../assets/8.png" alt="" style="width: 620px;">
+                <img src="assets/8.png" alt="" style="width: 620px;">
             </div>
             <p>
                 This is the <code>label</code> property in use in login.html when our <code>form</code> object 
                 is passed over.
             </p>
             <div>
-                <img src="../assets/9.png" alt="" style="width: 620px;">
+                <img src="assets/9.png" alt="" style="width: 620px;">
             </div>
         </li>
         <li>
             You might have already done this, but in the Quickstart, they set the form action to <code>"/"</code>, 
             which is a static path. It's always a good idea to use dynamically built urls like this:
             <div>
-                <img src="../assets/10.png" alt="" style="width: 620px;">
+                <img src="assets/10.png" alt="" style="width: 620px;">
             </div>
         </li>
         <li>We can also better format the layout of the labels and inputs in our WTForms 
             generated form by using normal HTML elements.
             <p>e.g.</p>
             <div>
-                <img src="../assets/11.png" alt="" style="width: 620px;">
+                <img src="assets/11.png" alt="" style="width: 620px;">
             </div>
             <p>This will result in the following layout:</p>
             <br/>
             <div>
-                <img src="../assets/12.png" alt="" style="width: 260px;">
+                <img src="assets/12.png" alt="" style="width: 260px;">
             </div>
         </li>
         <li>
@@ -116,11 +116,11 @@
             <br/>
             <br/>
             <div>
-                <img src="../assets/13.png" alt="" style="width: 620px;">
+                <img src="assets/13.png" alt="" style="width: 620px;">
             </div>
             <br/>
             <div>
-                <img src="../assets/14.png" alt="" style="width: 620px;">
+                <img src="assets/14.png" alt="" style="width: 620px;">
             </div>
         </li>
     </ol>
@@ -135,7 +135,7 @@
         <li>We can add validator objects when we create each field in our form. e.g.</li>
         <br/>
         <div>
-            <img src="../assets/15.png" alt="" style="width: 620px;">
+            <img src="assets/15.png" alt="" style="width: 620px;">
         </div>
         <p><a href="https://wtforms.readthedocs.io/en/3.0.x/crash_course/#validators">Documentation</a></p>
         <p>
@@ -150,7 +150,7 @@
         <li>We can tap into these errors and loop through them to show some text when an error appears.</li>
         <p><a href="https://wtforms.readthedocs.io/en/3.0.x/crash_course/#displaying-errors">Documentation</a></p>
         <div>
-            <img src="../assets/16.png" alt="" style="width: 620px;">
+            <img src="assets/16.png" alt="" style="width: 620px;">
         </div>
         <li>The final step is to tell our form to validate the user's entry when they hit submit. 
         So we have to edit our route and make sure it is able to respond to <code>POST</code> requests and then 
@@ -158,14 +158,14 @@
         </li>
         <br/>
         <div>
-            <img src="../assets/17.png" alt="" style="width: 620px;">
+            <img src="assets/17.png" alt="" style="width: 620px;">
         </div>
         <p>
             If you tried to test your form at the moment, you will see that if you leave a field empty, 
             it might give you a pop-up e.g. on Chrome:
         </p>
         <div>
-            <img src="../assets/18.png" alt="" style="width: 300px;">
+            <img src="assets/18.png" alt="" style="width: 300px;">
         </div>
         <p>
             This behaviour is not from our validator, in fact it's a built-in mechanism that varies from 
@@ -178,14 +178,14 @@
         </li>
         <br/>
         <div>
-            <img src="../assets/19.png" alt="" style="width: 620px;">
+            <img src="assets/19.png" alt="" style="width: 620px;">
         </div>
         <p>
             Now test your validation, it should give you a warning in red if you leave any field empty 
             and click "Log In". e.g.
         </p>
         <div>
-            <img src="../assets/20.png" alt="" style="width: 300px;">
+            <img src="assets/20.png" alt="" style="width: 300px;">
         </div>
         <p>
             CHALLENGE: Using <a href="https://wtforms.readthedocs.io/en/3.0.x/validators/#module-wtforms.validators">
@@ -195,16 +195,16 @@
         </p>
         <p>e.g. Email without "@" and 4 character password:</p>
         <div>
-            <img src="../assets/21.png" alt="" style="width: 360px;">
+            <img src="assets/21.png" alt="" style="width: 360px;">
         </div>
         <div>
-            <img src="../assets/22.png" alt="" style="width: 360px;">
+            <img src="assets/22.png" alt="" style="width: 360px;">
         </div>
         <div>
-            <img src="../assets/23.png" alt="" style="width: 360px;">
+            <img src="assets/23.png" alt="" style="width: 360px;">
         </div>
         <div>
-            <img src="../assets/24.png" alt="" style="width: 300px;">
+            <img src="assets/24.png" alt="" style="width: 300px;">
         </div>
     </ol>
     <h3>
@@ -231,7 +231,7 @@
         or <code>False</code> if it failed.
     </p>
     <div>
-        <img src="../assets/24.png" alt="" style="width: 300px;">
+        <img src="assets/24.png" alt="" style="width: 300px;">
     </div>
     <p>
         CHALLENGE: Update the <code>/login</code> route in <b>main.py</b> so that if the form was <b>submitted</b> and 
@@ -245,10 +245,154 @@
     <p>e.g.</p>
     <div>
         <h4>Access Denied</h4>
-        <img src="../assets/25.gif" alt="" style="width: 380px;">
+        <img src="assets/25.gif" alt="" style="width: 380px;">
     </div>
     <div>
         <h4>Access Granted</h4>
-        <img src="../assets/26.gif" alt="" style="width: 380px;">
+        <img src="assets/26.gif" alt="" style="width: 380px;">
     </div>
+    <h3>Inheriting Templates Using Jinja2</h3>
+    <p>
+        Previously, we saw that we can inject a header.html and footer.html using Jinja and the code might 
+        look something like this:
+    </p>
+    <code>{% include "header.html" %}</code>
+    <br/>
+    <code>Web page content</code>
+    <br/>
+    <code>{% include "footer.html" %}</code>
+    <p>
+        This is a really flexible way of using Jinja to Template a website. It means that if your header and 
+        footer stay the same then you can just insert them into all your webpages.
+    </p>
+    <h3>Template Inheritance</h3>
+    <p>
+        However, often you'll find that you actually want to use the same design template for your entire website, 
+        but you might need to change some code in your header or footer. In these cases, it's better to use 
+        <b>Template</b> Inheritance instead.
+    </p>
+    <p>
+        Template inheritance is similar to Class inheritance, you can take a parent template and extend its styling 
+        in your child web pages.
+    </p>
+    <p>
+        For example, if we create a base.html file that has the following code:
+    </p>
+    <div>
+        <img src="assets/27.png" alt="" style="width: 320px;">
+    </div>  
+    <p>
+        It has predefined areas (or blocks) where new content can be inserted by a child webpage inheriting 
+        from this template.
+    </p>
+    <ol>
+        <li>
+            We could re-write the success.html page to inherit from this base.html template:
+            <div>
+                <img src="assets/28.png" alt="" style="width: 520px;">
+            </div>
+            <div>
+                <p>#1. This line of code tells the templating engine (Jinja) to use "base.html" as the template for this page.</p>
+                <p>#2. This block inserts a custom title into the header of the template.</p>
+                <p>#3. This block provides the content of the website. The part that is going to vary between webpages.</p>
+            </div>
+        </li>
+        <li>
+            CHALLENGE: Try doing the same thing for denied.html, making sure that it uses the base.html as the 
+            template and it has a custom title and content.
+        </li>
+    </ol>
+    <h3>Super Blocks</h3>
+    <p>When we inherit from Python classes, you often see <code>super.init()</code></p>
+    <p>
+        The super keyword refers to the parent that the child is inheriting from. 
+        e.g If Simba inherits from Mufasa, then Mufasa is the super.
+    </p>
+    <div style="text-align: center;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHJ0dTh5YjAzYmlraXIyMGR1N3l6ZnllbG04ZXN4eW92em44ZGlzdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2h8BdeXxhGGB2/giphy.gif" alt="" style="width: 280px;">
+    </div>
+    <div>
+        When we are inheriting templates. Sometimes, there's some part of the template that we want to keep, but we also want to add to it. So we can use super blocks in this case.
+    </div>
+    <ol start="3">
+        <li>Add the following code to your base.html:</li>
+        <br/>
+        <div style="text-align: center;">
+            <img src="assets/29.png" alt="" style="width: 280px;">
+        </div>
+        <p>We named this block "<code>styling</code>" but we can call it anything we want.</p>
+        <p>We just need to make sure that we close all blocks with <code>{% endblock %}</code> </p>
+        <p> 
+            Now we reload our website, we should see that both the success page and the denied page will have a 
+            "AntiqueWhite" background. (We covered inline, internal and external styling in the CSS section of this course - Day 43).
+        </p>
+        <div style="text-align: center;">
+            <img src="assets/30.png" alt="" style="width: 360px;">
+        </div>
+        <p>
+            So now you can see how easy it is to modify all web pages in your website if you use the same template. 
+            But what if on the denied page we also wanted to make the <code>&lt;h1&gt;</code> red? 
+            We would need to modify the internal styling in the <code>&lt;style&gt;</code> tag. 
+            But that code is in the base.html template. Luckily we have super blocks.
+        </p>
+        <li>
+            On the <b>denied.html</b> page, add a super block using <code>{{ super() }}</code>, this will inject all 
+            the code in the styling block to this child page. Then afterwards before the <code>{% endblock %}</code>, 
+            we can add some more styling to change the colour of the <code>&lt;h1&gt;</code>.
+        </li>
+        <li>
+            Similar to what you've done with the other html files, using Jinja templating make the success.html 
+            file a child template of the base.html as well. 
+        </li>
+    </ol>
+    <h2>Using Bootstrap-Flask as an Inherited Template</h2>
+    <p>
+        There was a reason why we learnt about inherited templates! We need to improve the appearance of our website. 
+        At the moment it looks like it was born in the 90s.
+    </p>
+    <div style="text-align: center;">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXlxMTliNnN1M2VkdmVlMXg1OHduNjF4NnF1MzR0NmRta3MyOGx1biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rQn119cCThAjK/giphy.gif" alt="" style="width: 280px;">
+    </div>
+    <h3>Bootstrap-Flask</h3>
+    <p>
+        The way that we're going to quickly improve the appearance of our website is of course through that super useful 
+        tool we learnt about on Day 58 - Bootstrap. Previously we saw that we could simply include a link to the 
+        Bootstrap CSS code in the header of our website. But there's an even easier way. We can use the 
+        Bootstrap-Flask Python extension.
+    </p>
+    <ol>
+        <li>Install Bootstrap-Flask to your project using pip:</li>
+        <p><code>pip install bootstrap-flask</code></p>
+        <li>
+            CHALLENGE: Delete the super block in your denied.html file and use the 
+            <a href="https://bootstrap-flask.readthedocs.io/en/stable/">Bootstrap-Flask 
+            documentation</a> to convert our denied.html, success.html, login.html and index.html 
+            to use Bootstrap as the template.
+            <div style="text-align: center;">
+                <img src="assets/32.png" alt="" style="width: 540px;">
+            </div>
+            <ul>
+                <li>Follow the documentation to initialise bootstrap-flask in your main.py</li>
+                <li>Load the bootstrap css inside your base.html.</li>
+            </ul>
+        </li>
+        <p>This is what your website should look like if you complete the challenge:</p>
+        <div style="text-align: center;">
+            <img src="assets/33.gif" alt="" style="width: 380px;">
+        </div>
+    </ol>
+    <h2>Bootstrap-Flask Supports WTForms</h2>
+    <p>
+        One of the main reasons why we're using Bootstrap-Flask in this project is because it has one of the most 
+        convenient methods for generating forms with WTForms.
+    </p>
+    <p>
+        Literally, in 1 line of code, you can create your form. It's as simple as:
+    </p>
+    <p><code>{{ render_form(form) }}</code></p>
+    <p>
+        What this line of code will do is generate all the labels, inputs, buttons, styling for your form 
+        just by taking the WTForm object that was passed to the template (<code>form</code>).
+    </p>
+    <p>You can simply delete the entire &lt;form&gt; element.</p>
 </div>

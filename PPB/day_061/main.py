@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect
+from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, Email, Length
@@ -15,6 +16,7 @@ class LoginForm(FlaskForm):
 
 app = Flask(__name__)
 app.secret_key = "consistency"
+bootstrap = Bootstrap5(app) # initialise bootstrap-flask
 
 
 @app.route("/")
