@@ -395,4 +395,30 @@
         just by taking the WTForm object that was passed to the template (<code>form</code>).
     </p>
     <p>You can simply delete the entire &lt;form&gt; element.</p>
+    <div style="text-align: center;">
+        <img src="assets/34.png" alt="" style="width: 640px;">
+    </div>
+    <p>
+        Then, add a line to import the <a href="https://bootstrap-flask.readthedocs.io/en/stable/macros/#render-form">
+            render_form()
+        </a> function from bootstrap-flask and use the <code>render_form()</code> to generate your <code>form</code>.
+    </p>
+    <div style="text-align: center;">
+        <img src="assets/35.png" alt="" style="width: 540px;">
+    </div>
+    <p>
+        Run your code and see the entire form laid out for you with zero effort. 
+        Also, check out the error messages from validation!
+    </p>
+    <p>
+        Now you might wonder, why did I put you through all that hassle to learn how to create a WTForm from 
+        scratch when I knew all along that you can just use the Bootstrap-Flask <code>render_form()</code>? 
+        Because everything is dandy as long as it works. This render_form macro is a black box. It's magic. 
+        Which is great, but what happens if your form breaks? What if it's not doing what you expect it to? 
+        How would you debug magic?
+    </p>
+    <p>
+        That's why it's so important to understand how things work under the hood. 
+        Once you understand it, you can take all the shortcuts.
+    </p>
 </div>
