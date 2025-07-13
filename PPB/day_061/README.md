@@ -10,7 +10,7 @@
     <img src="assets/3.png" alt="" style="width: 720px;">
 </div>
 
-<div style="font-size:1.2em">
+<div style="font-size:1.3em">
     <p>
         <b>CHALLENGE</b>: Read 
         <a href="https://flask-wtf.readthedocs.io/en/1.0.x/quickstart/">
