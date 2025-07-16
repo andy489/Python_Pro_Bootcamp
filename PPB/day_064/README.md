@@ -5,7 +5,7 @@
 </h3>
 
 <div style="text-align: center;">
-    <img src="assets/1.gif" alt="" style="width: 840px;">
+    <img src="assets/1.gif" alt="" style="width: 720px;">
 </div>
 
 <div style="font-size:1.3em">
@@ -39,7 +39,7 @@
     </p>
     <p>e.g.</p>
     <div style="text-align: center;">
-        <img src="assets/2.gif" alt="" style="width: 840px;">
+        <img src="assets/2.gif" alt="" style="width: 720px;">
     </div>
     <ol>
         <li>
@@ -90,7 +90,7 @@
     </p>
     <p>e.g.</p>
     <div style="text-align: center;">
-        <img src="assets/3.gif" alt="" style="width: 840px;">
+        <img src="assets/3.gif" alt="" style="width: 720px;">
     </div>
     <h3>Add New Movies Via the Add Page</h3>
     <p>
@@ -105,7 +105,7 @@
             </p>
             <p>e.g.</p>
             <div style="text-align: center;">
-                <img src="assets/4.gif" alt="" style="width: 840px;">
+                <img src="assets/4.gif" alt="" style="width: 720px;">
             </div>
         </li>
         <li>
@@ -123,7 +123,7 @@
                         API key, and then copy that API key into your project.
                     </p>
                     <div style="text-align: center;">
-                        <img src="assets/5.png" alt="" style="width: 840px;">
+                        <img src="assets/5.png" alt="" style="width: 720px;">
                     </div>
                 </li>
                 <li>
@@ -150,7 +150,7 @@
                 </li>
                 <p>e.g.</p>
                 <div style="text-align: center;">
-                    <img src="assets/6.gif" alt="" style="width: 840px;">
+                    <img src="assets/6.gif" alt="" style="width: 720px;">
                 </div>
             </ul>
         </li>
@@ -182,7 +182,7 @@
                     </p>
                     <p>e.g.</p>
                     <div style="text-align: center;">
-                        <img src="assets/7.gif" alt="" style="width: 840px;">
+                        <img src="assets/7.gif" alt="" style="width: 720px;">
                     </div>
                 </li>   
             </ul>
@@ -195,7 +195,7 @@
             </p>
             <p>e.g.</p>
             <div style="text-align: center;">
-                <img src="assets/8.gif" alt="" style="width: 840px;">
+                <img src="assets/8.gif" alt="" style="width: 720px;">
             </div>
         </li>
     </ol>
@@ -213,7 +213,7 @@
         we've added then it should display:
     </p>
     <div style="text-align: center;">
-        <img src="assets/11.gif" alt="" style="width: 840px;">
+        <img src="assets/11.gif" alt="" style="width: 720px;">
     </div>
     <p>
         If we add another movie, and it had the highest rating among the movies, then it should be ranked according 
@@ -221,7 +221,7 @@
     </p>
     <p>e.g. If Crash (8.9), Eyes Wide Shut (9.3), Closer (9.9)</p>
     <div style="text-align: center;">
-        <img src="assets/12.gif" alt="" style="width: 840px;">
+        <img src="assets/12.gif" alt="" style="width: 720px;">
     </div>
     <p>But if we edit the rating so that it becomes: Crash (9.1), Eyes Wide Shut (9.0), Closer (8.9)</p>
     <p>Then they should re-arrange according to their ratings.</p>
