@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|64|Advanced|→ Top 10 Movies Website|-|Top 10 Movies Website<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_064/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_064)|
 |63|Advanced|→ SQLite Databases<br>→ ORM with SQLAlchemy<br>→ CRUD Operations|-|SQLite Playground<br>→ [**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_063/sqlite_playground/main.py)<br>Virtual Bookshelf Flask Website<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_063/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_063)|
 |62|Advanced|→ Flask<br>→ WTForms<br>→ Bootstrap and CSV<br>→ Wifi Coffee Project|-|Wifi Coffee<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_062/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_062)|
 |61|Advanced|→ Building Advanced Forms with Flask-WTForms|-|Render Forms<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_061/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_061)|
