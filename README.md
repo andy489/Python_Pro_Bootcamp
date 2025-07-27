@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|66|Advanced|→ Building API with RESTful Routing|-|Cafe & Wifi<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_066/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_066)|
 |65|Web Design|→ Hotel Web Design|-|UI/UX<br>→ [**hotel_design.pdf**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_065/hotel_design.pdf)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_065)|
 |64|Advanced|→ Top 10 Movies Website|-|Top 10 Movies Website<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_064/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_064)|
 |63|Advanced|→ SQLite Databases<br>→ ORM with SQLAlchemy<br>→ CRUD Operations|-|SQLite Playground<br>→ [**main.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_063/sqlite_playground/main.py)<br>Virtual Bookshelf Flask Website<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_063/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_063)|
