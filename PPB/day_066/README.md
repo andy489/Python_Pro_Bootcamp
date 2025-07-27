@@ -156,4 +156,23 @@
     <div style="text-align: center;">
         <img src="assets/12.png" alt="" style="width: 840px;">
     </div> 
+    <h3>Build Documentation for Your API</h3> 
+    <p>
+        If we want other people to use our API, then we have to document how to use it. People can't see the code on 
+        our servers, so we have to tell them how to interact with our servers via the API constraints.
+    </p>
+    <p>e.g. What are the routes, what are the required parameters etc.</p>
+    <p>
+        Luckily we made all our requests in Postman and you gave each request a name and description then Postman 
+        will generate the documentation automatically for us.
+    </p>
+    <div style="text-align: center;">
+        <img src="assets/13.png" alt="" style="width: 840px;">
+    </div> 
+    <p>
+        Go through the steps to publish your documentation and this is what you should end up with:
+        <a href="https://documenter.getpostman.com/view/41363538/2sAYXBFemz">
+            https://documenter.getpostman.com/view/41363538/2sAYXBFemz
+        </a>
+    </p>
 </div>

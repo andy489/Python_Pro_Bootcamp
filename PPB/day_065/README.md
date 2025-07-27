@@ -1,6 +1,5 @@
 # Introduction to Web Design
 
-
 <div style="font-size:1.3em">
     <p>We have heard of the saying:</p>
     <p>
