@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|68|Advanced|→ Authentication with Flask|-|Login and Registering Users with Authentication<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_068/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_068)|
 |67|Advanced|→ Blog Capstone Project Part 3|-|Blog Capstone<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_067/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_067)|
 |66|Advanced|→ Building API with RESTful Routing|-|Cafe & Wifi<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_066/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_066)|
 |65|Web Design|→ Hotel Web Design|-|UI/UX<br>→ [**hotel_design.pdf**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_065/hotel_design.pdf)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_065)|
