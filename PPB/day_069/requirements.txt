@@ -15,3 +15,4 @@ typing-extensions==4.14.1
 Werkzeug==3.0.6
 WTForms==3.0.1
 email_validator==2.0.0
+python-dotenv==1.0.0
