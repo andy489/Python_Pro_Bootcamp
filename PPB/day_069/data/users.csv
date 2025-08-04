@@ -1,0 +1,4 @@
+id,email,password,name
+1,admin@email.com,pbkdf2:sha256:600000$9ru7GJH2$8daaf7e3f5353d5863914da5ecb15d65c2d8af420f9a3d7fc52dda9e926204e6,andrey
+2,pesho@gmail.com,pbkdf2:sha256:600000$1ghgYxIR$8e1140c30e44139c86d185a45ed21604ad953b1efae05903d3934b61046f2b06,pesho
+3,ania@gmail.com,pbkdf2:sha256:600000$wwmDYW29$897f0f456a3ef3f33234dd4248391b097bf9b2a5751a5e5b5ef32a613da788f5,ania
