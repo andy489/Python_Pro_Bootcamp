@@ -59,12 +59,13 @@ def create_app():
 app = create_app()
 
 curr_year = datetime.now().year
+
+
 @app.context_processor
 def inject_footer_data():
     return {
         "curr_year": curr_year,
     }
-
 
 
 # Register the context processor
