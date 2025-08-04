@@ -9,90 +9,42 @@
         the final step in our Blog Capstone Project. Once we're done, it will be a fully-fledged blog website that you 
         can publish and launch.
     </p>
-    <style>
-        .tree {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            max-width: fit-content;
-        }
-        .file {
-            color: #268bd2;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .dir {
-            color: #2aa198;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .dir::before {
-            content: '📁 ';
-        }
-        .dir.collapsed::before {
-            content: '📂 ';
-        }
-        .hidden {
-            display: none;
-        }
-        .indent {
-            margin-left: 20px;
-        }
-        .py {
-            font-weight: normal;
-        }
-    </style>
-    <div class="tree">
-        <div class="dir root">.</div>
-        <div class="indent">
-            <div class="dir">forms
-                <div class="indent">
-                    <div class="file py"><a href="#">__init__.py</a></div>
-                    <div class="file py"><a href="#">forms.py</a></div>
-                </div>
-            </div>
-            <div class="dir">models
-                <div class="indent">
-                    <div class="file py"><a href="#">__init__.py</a></div>
-                    <div class="file py"><a href="#">blog_post.py</a></div>
-                    <div class="file py"><a href="#">comment.py</a></div>
-                    <div class="file py"><a href="#">user.py</a></div>
-                </div>
-            </div>
-            <div class="dir">routes
-                <div class="indent">
-                    <div class="file py"><a href="#">__init__.py</a></div>
-                    <div class="file py"><a href="#">auth_routes.py</a></div>
-                    <div class="file py"><a href="#">blog_routes.py</a></div>
-                    <div class="file py"><a href="#">main_routes.py</a></div>
-                </div>
-            </div>
-            <div class="dir">services
-                <div class="indent">
-                    <div class="file py"><a href="#">__init__.py</a></div>
-                    <div class="file py"><a href="#">auth_service.py</a></div>
-                    <div class="file py"><a href="#">blog_service.py</a></div>
-                    <div class="file py"><a href="#">comment_service.py</a></div>
-                </div>
-            </div>
-            <div class="dir">utils
-                <div class="indent">
-                    <div class="file py"><a href="#">__init__.py</a></div>
-                    <div class="file py"><a href="#">decorators.py</a></div>
-                    <div class="file py"><a href="#">gravatar.py</a></div>
-                </div>
-            </div>
-            <div class="file py"><a href="#">__init__.py</a></div>
-            <div class="file py"><a href="#">app.py</a></div>
-            <div class="file py"><a href="#">config.py</a></div>
-            <div class="file py"><a href="#">extensions.py</a></div>
-            <div class="file py"><a href="#">generate_class_tree.py</a></div>
-            <div class="file py"><a href="#">init_db.py</a></div>
-            <div class="file"><a href="#">README.md</a></div>
-            <div class="file"><a href="#">requirements.txt</a></div>
-        </div>
-    </div>
+</div>
+
+### Project Structure
+
+- **blog_post**
+  - [forms/](forms/)
+    - [\_\_init\_\_.py](forms/__init__.py)
+    - [forms.py](forms/forms.py)
+  - [models/](models/)
+    - [\_\_init\_\_.py](models/__init__.py)
+    - [blog_post.py](models/blog_post.py)
+    - [comment.py](models/comment.py)
+    - [user.py](models/user.py)
+  - [routes/](routes/)
+    - [\_\_init\_\_.py](routes/__init__.py)
+    - [auth_routes.py](routes/auth_routes.py)
+    - [blog_routes.py](routes/blog_routes.py)
+    - [main_routes.py](routes/main_routes.py)
+  - [services/](services/)
+    - [\_\_init\_\_.py](services/__init__.py)
+    - [auth_service.py](services/auth_service.py)
+    - [blog_service.py](services/blog_service.py)
+    - [comment_service.py](services/comment_service.py)
+  - [utils/](utils/)
+    - [\_\_init\_\_.py](utils/__init__.py)
+    - [decorators.py](utils/decorators.py)
+    - [gravatar.py](utils/gravatar.py)
+  - [\_\_init\_\_.py](__init__.py)
+  - [app.py](app.py)
+  - [config.py](config.py)
+  - [extensions.py](extensions.py)
+  - [generate_class_tree.py](generate_class_tree.py)
+  - [init_db.py](init_db.py)
+  - [README.md](README.md)
+  - [requirements.txt](requirements.txt)
+<div style="font-size:1.2em">
     <p>
         <img src="assets/01.gif" alt="" style="width: 820px;">
     </p>
