@@ -10,10 +10,10 @@
                     <h1>{{ post.title }}</h1>
                     <h2 class="subheading">{{ post.subtitle }}</h2>
                     <span class="meta">
-            Posted by
+                        Posted by
                         <!-- Changed from post.author -->
-            <a href="#">{{ post.author.name }}</a>
-            on {{ post.date }}
+                        <a href="#"><span class="author">{{ post.author.name }}</span></a>
+                        on {{ post.date }}
           </span>
                 </div>
             </div>
@@ -52,7 +52,10 @@
                             </div>
                             <div class="commentText">
                                 {{comment.text|safe}}
-                                <span class="sub-text">{{comment.comment_author.name}}</span>
+                                <span class="date sub-text">
+                                    {{comment.comment_author.name}}
+                                    {{comment.posted_time | datetimeformat}}
+                                </span>
                             </div>
                             <div>
                                 {% if current_user.id == 1: %}

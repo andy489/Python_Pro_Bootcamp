@@ -1,4 +1,5 @@
-from flask import flash, redirect, url_for
+from datetime import datetime
+from flask import flash
 from flask_login import current_user
 from models.comment import Comment
 from extensions import db
@@ -13,7 +14,8 @@ class CommentService:
         new_comment = Comment(
             text=form.comment_text.data,
             comment_author=current_user,
-            post_id=post_id
+            post_id=post_id,
+            posted_time=datetime.now()
         )
 
         db.session.add(new_comment)

@@ -60,6 +60,11 @@ app = create_app()
 
 curr_year = datetime.now().year
 
+@app.template_filter('datetimeformat')
+def datetimeformat(value, format='%Y-%m-%d %H:%M:%S'):
+    if value is None:
+        return ""
+    return value.strftime(format)
 
 @app.context_processor
 def inject_footer_data():

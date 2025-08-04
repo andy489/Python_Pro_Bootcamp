@@ -1,5 +1,5 @@
-id,text,author_id,post_id
-1,"<p>Fascinating!</p>",3,1
-2,"<p>This place looks great. 😍</p>",3,2
-3,"<p>Greece is absolutely <strong>incredible</strong>! From its stunning beaches and ancient history to the delicious food and warm hospitality, it&rsquo;s a dream destination. 🇬🇷✨</p>",2,2
-4,"<p>I totally agree with Pesho.</p>",3,2
+id,text,author_id,post_id,posted_time
+1,"<p>Fascinating!</p>",3,1,2025-08-01 11:11:44.287918
+2,"<p>This place looks great. 😍</p>",3,2,2025-08-02 18:04:33.537229
+3,"<p>Greece is absolutely <strong>incredible</strong>! From its stunning beaches and ancient history to the delicious food and warm hospitality, it&rsquo;s a dream destination. 🇬🇷✨</p>",2,2,2025-08-03 13:22:17.666791
+4,"<p>I totally agree with Pesho.</p>",3,2,2025-08-04 16:39:40.679661

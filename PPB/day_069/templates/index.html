@@ -27,7 +27,7 @@
                 <p class="post-meta">
                     Posted by
                     <!-- post.author.name is now a User object -->
-                    <a href="#">{{post.author.name}}</a>
+                    <a href="#"><span class="author">{{post.author.name}}</span></a>
                     on {{post.date}}
                     <!-- Only show delete button if user id is 1 (admin user) -->
                     {% if current_user.id == 1: %}

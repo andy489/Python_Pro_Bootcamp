@@ -1,4 +1,6 @@
 import csv
+from datetime import datetime
+
 from extensions import db
 from models import User, BlogPost, Comment
 
@@ -35,7 +37,8 @@ def seed_database():
                 id=row['id'],
                 author_id=row['author_id'],
                 post_id=row['post_id'],
-                text=row['text']
+                text=row['text'],
+                posted_time=datetime.strptime(row['posted_time'], '%Y-%m-%d %H:%M:%S.%f'),
             )
             db.session.add(comment)
 
