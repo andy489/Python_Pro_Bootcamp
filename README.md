@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|70|Advanced|→ Git, Github and Version Control|-|Git and Github: Introduction to a powerful Version Control System<br>→ [**git_cheat_sheet.pdf**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_070/assets/git_cheat_sheet.pdf)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_070)|
 |69|Advanced|→ Capstone Project Part 4 - Adding Users|-|Adding Users to Our Blog Project<br>→ [**app.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_069/app.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_069)|
 |68|Advanced|→ Authentication with Flask|-|Login and Registering Users with Authentication<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_068/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_068)|
 |67|Advanced|→ Blog Capstone Project Part 3|-|Blog Capstone<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_067/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_067)|
