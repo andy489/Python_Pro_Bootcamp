@@ -288,6 +288,6 @@
         (You can see the psycopg package listed in the requirements.txt.)
     </p>
     <p>
-        Your blog should be up and running now.
+        Blog Post Web App should be up and running now.
     </p>
 </div>
