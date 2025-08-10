@@ -52,14 +52,14 @@ def edit_post(post_id):
     return render_template(template_name_or_list="make-post.html", form=form, is_edit=True, current_user=current_user)
 
 
-@blog_bp.route("/delete-post/<int:post_id>")
+@blog_bp.route(rule="/delete-post/<int:post_id>")
 @login_required
 def delete_post(post_id):
     BlogService.delete_post(post_id)
     return redirect(url_for(endpoint='blog.get_all_posts'))
 
 
-@blog_bp.route("/delete-comment/<int:comment_id>")
+@blog_bp.route(rule="/delete-comment/<int:comment_id>")
 @login_required
 def delete_comment(comment_id):
     post_id = BlogService.delete_comment(comment_id)
