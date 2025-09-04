@@ -4,14 +4,14 @@
 
 ## Tinder Bot
 
-<h4>
+<h3>
     <p>
         <a href="main.py">main.py</a>
     </p>
     <p>
         <a href="tinder_bot.py">tinder_bot.py</a>
     </p>
-</h4>
+</h3>
 
 <ul style="font-size: 1.2em">
     <li>
