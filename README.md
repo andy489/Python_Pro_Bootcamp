@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|72|Advanced|→ Data Exploration with Pandas|[Jupyter Link](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_072.ipynb)|College Major vs Your Salary<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_072.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_072)|
 |71|Advanced|→ Deploying Your Web Application|-|Publishing Flask Website<br>→ [**Procfile**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_071/Procfile)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_071)|
 |70|Advanced|→ Git, Github and Version Control|-|Git and Github: Introduction to a powerful Version Control System<br>→ [**git_cheat_sheet.pdf**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_070/assets/git_cheat_sheet.pdf)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_070)|
 |69|Advanced|→ Capstone Project Part 4 - Adding Users|-|Adding Users to Our Blog Project<br>→ [**app.py**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_069/app.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_069)|
