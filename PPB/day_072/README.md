@@ -39,8 +39,8 @@
         Open your first Google Colab Notebook in through your <a href="https://drive.google.com/">Google Drive</a>. 
         You can find the Python Notebook under New → More → Google Colaboratory
     </p>
-    <p style="text-align: center">
-        <img src="assets/02.gif" alt="" style="width: 720px;"/>
+    <p>
+        <img src="assets/02.gif" alt="" style="width: 820px;"/>
     </p>
     <p>
         If you cannot access the Google Colab Notebooks or would like to run everything locally on your computer, 
@@ -52,8 +52,8 @@
         The notebook is divided into cells. Each cell can be executed individually and the result is 
         automatically printed out below. To execute a cell use the shortcut <b>Shift + Enter</b>.
     </p>
-    <p style="text-align: center">
-        <img src="assets/03.gif" alt="" style="width: 720px;"/>
+    <p>
+        <img src="assets/03.gif" alt="" style="width: 820px;"/>
     </p>
     <p>
         <i>Note:</i> The Google Colab Notebook will to connect to a Runtime in order to execute any code.
@@ -64,12 +64,12 @@
         Download the salaries_by_college_major.csv file and add this file to the 
         notebook by dropping it into the sidebar with the little folder icon.
     </p>
-    <p style="text-align: center">
-        <img src="assets/04.gif" alt="" style="width: 720px;"/>
+    <p>
+        <img src="assets/04.gif" alt="" style="width: 820px;"/>
     </p>
     <p>Then import pandas into your notebook and read the .csv file.</p>
-    <p style="text-align: center">
-        <img src="assets/05.png" alt="" style="width: 720px;"/>
+    <p>
+        <img src="assets/05.png" alt="" style="width: 820px;"/>
     </p>
     <p>EXPLORE!</p>
 </div>
