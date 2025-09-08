@@ -1,4 +1,4 @@
-<h1>Data Visualization with Matplitlib: Programming Languages</h1>
+<h1>Data Visualization with Matplotlib: Programming Languages</h1>
 <div style="font-size:1.2em">
     <h3>Analyze the Popularity of Different Programming Languages over Time</h3>
     <p style="text-align: center">
