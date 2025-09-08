@@ -2,7 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
-|74|Advanced|→ Data Visualization with Matplotlib|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_073.ipynb)|Programming Languages<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_073.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_073)|
+|73|Advanced|→ Data Visualization with Matplotlib|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_073/day_073.ipynb)|Programming Languages<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_073/day_073.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_073)|
 |72|Advanced|→ Data Exploration with Pandas|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_072.ipynb)|College Major vs Your Salary<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_072.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_072)|
 |71|Advanced|→ Deploying Your Web Application|-|Publishing Flask Website<br>→ [**Procfile**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_071/Procfile)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_071)|
 |70|Advanced|→ Git, Github and Version Control|-|Git and Github: Introduction to a powerful Version Control System<br>→ [**git_cheat_sheet.pdf**](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_070/assets/git_cheat_sheet.pdf)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_070)|
