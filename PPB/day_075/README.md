@@ -1,5 +1,5 @@
 <h1>Resampling and Visualising Time Series</h1>
-<h2>Combine Google Trends with other Time Series Data</h1>
+<h2>Combine Google Trends with other Time Series Data</h2>
 <div style="font-size:1.2em">
     <p style="text-align: center">
         <img src="assets/01.png" alt="" style="width: 360px;"/>
