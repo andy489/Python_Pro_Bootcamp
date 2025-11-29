@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|75|Advanced|→ Resampling and Visualising Time Series|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_075/day_075.ipynb)|Google Trends Data<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_075/day_075.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_075)|
 |74|Advanced|→ Aggregate and Merge Data in Pandas|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_074/day_074.ipynb)|Analysing a Dataset of LEGO Pieces<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_074/day_074.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_074)|
 |73|Advanced|→ Data Visualization with Matplotlib|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_073/day_073.ipynb)|Programming Languages<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_073/day_073.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_073)|
 |72|Advanced|→ Data Exploration with Pandas|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_072.ipynb)|College Major vs Your Salary<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_072/day_072.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_072)|
