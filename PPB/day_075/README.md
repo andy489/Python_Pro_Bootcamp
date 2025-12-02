@@ -2,7 +2,7 @@
 <h2>Combine Google Trends with other Time Series Data</h2>
 <div style="font-size:1.2em">
     <p style="text-align: center">
-        <img src="assets/01.png" alt="" style="width: 360px;"/>
+        <img src="assets/01.png" alt="" style="width: 860px;"/>
     </p>
     <p>
         What can be the popularity of search terms tell us about the world?

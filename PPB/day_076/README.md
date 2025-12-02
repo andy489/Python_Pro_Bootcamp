@@ -3,7 +3,7 @@
 <div style="font-size:1.2em">
     <p>Wrestle the Android App Store Data into Beautiful Looking Charts with Plotly</p>
     <p style="text-align: center">
-        <img src="assets/01.png" alt="" style="width: 360px;"/>
+        <img src="assets/01.png" alt="" style="width: 860px;"/>
     </p>
     <p>
         Have you ever thought about building your own iOS or Android app? 
