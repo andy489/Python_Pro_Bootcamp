@@ -1,12 +1,9 @@
-from flask_gravatar import Gravatar
+import hashlib
+from urllib.parse import urlencode
 
-def init_gravatar(app):
-    gravatar = Gravatar(app,
-                      size=100,
-                      rating='g',
-                      default='retro',
-                      force_default=False,
-                      force_lower=False,
-                      use_ssl=False,
-                      base_url=None)
-    return gravatar
+
+def gravatar_url(email: str, size: int = 100, default: str = "identicon", rating: str = "g") -> str:
+    email_clean = (email or "").strip().lower().encode("utf-8")
+    email_hash = hashlib.md5(email_clean).hexdigest()
+    params = urlencode({"s": str(size), "d": default, "r": rating})
+    return f"https://www.gravatar.com/avatar/{email_hash}?{params}"

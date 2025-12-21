@@ -17,9 +17,10 @@ def index():
 
 
 @app.route("/bye")
-@make_bold
-@make_emphasis
-@make_underlined
+# @make_bold
+# @make_emphasis
+# @make_underlined
+@wrap({'style': 'color: Tomato;'}, 'div', 'b', 'i', 'u')
 def bye():
     return "Bye!"
 

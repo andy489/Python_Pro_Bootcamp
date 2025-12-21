@@ -6,6 +6,7 @@ from sqlalchemy import event
 from init_db import seed_database
 from models import User
 
+from utils.gravatar import gravatar_url
 
 def create_app():
     app = Flask(__name__)
@@ -41,8 +42,7 @@ def create_app():
     init_login_manager(app)
 
     # Initialize gravatar
-    from utils.gravatar import init_gravatar
-    init_gravatar(app)
+    app.jinja_env.globals["gravatar_url"] = gravatar_url
 
     # Register blueprints
     from routes.auth_routes import auth_bp
