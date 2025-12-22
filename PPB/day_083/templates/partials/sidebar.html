@@ -1,0 +1,99 @@
+<aside class="sidebar" data-sidebar>
+    <div class="sidebar-info">
+        <figure class="avatar-box">
+            <img src="{{ url_for('static', filename='images/avatars/my-avatar.png') }}"
+                 alt="Andrey Stoev's avatar"
+                 width="80"
+                 class="avatar-zoom">
+        </figure>
+
+        <div class="info-content">
+            <h1 class="name" title="Andrey Stoev">Andrey Stoev</h1>
+            <p class="title">Back-end Developer</p>
+        </div>
+
+        <button class="info-more-btn" data-sidebar-btn>
+            <span>Show Contacts <i class="fas fa-chevron-down"></i></span>
+        </button>
+    </div>
+
+    <div class="sidebar-info-more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+            <li class="contact-item">
+                <div class="icon-box">
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Email</p>
+                    <a href="mailto:stoev.andy@gmail.com" class="contact-link">stoev.andy@gmail.com</a>
+                </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Phone</p>
+                    <a href="tel:+359 887 460 ***" class="contact-link">+359 887 460 ***</a>
+                </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Birthday</p>
+                    <time datetime="1982-06-23">Dec 22, 1988</time>
+                </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Location</p>
+                    <address>Sofia, Bulgaria</address>
+                </div>
+            </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+            <li class="social-item"><a href="https://www.facebook.com/andy.stoev/"
+                                       target="_blank"
+                                       class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a></li>
+            <li class="social-item"><a href="https://x.com/andy489489"
+                                       target="_blank"
+                                       class="social-link">
+                <i class="fab fa-x-twitter"></i>
+            </a></li>
+            <li class="social-item"><a href="https://www.instagram.com/andyy4489"
+                                       target="_blank"
+                                       class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+            <li class="social-item"><a href="https://www.linkedin.com/in/andy489/"
+                                       target="_blank"
+                                       class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li class="social-item"><a href="https://andy489.github.io/"
+                                       target="_blank"
+                                       class="social-link">
+                <i class="fab fa-github"></i>
+            </a></li>
+        </ul>
+    </div>
+</aside>

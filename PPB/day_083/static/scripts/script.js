@@ -7,7 +7,21 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-sidebarBtn.addEventListener("click", function() {elementToggleFunc(sidebar); })
+sidebarBtn.addEventListener("click", function() {
+    elementToggleFunc(sidebar);
+
+    const iconElement = this.querySelector("i.fas");
+
+    if (iconElement) {
+        const isDown = iconElement.classList.contains("fa-chevron-down");
+
+        if (isDown) {
+            iconElement.classList.replace("fa-chevron-down", "fa-chevron-up");
+        } else {
+            iconElement.classList.replace("fa-chevron-up", "fa-chevron-down");
+        }
+    }
+})
 
 //Activating Modal-testimonial
 
@@ -19,10 +33,28 @@ const overlay = document.querySelector('[data-overlay]');
 const modalImg = document.querySelector('[data-modal-img]');
 const modalTitle = document.querySelector('[data-modal-title]');
 const modalText = document.querySelector('[data-modal-text]');
+const modalDate = document.querySelector('[data-modal-date]');
+
+// Create PDF button - ONLY ONCE
+const pdfButton = document.createElement('button');
+pdfButton.className = 'pdf-button';
+pdfButton.innerHTML = '<i class="fas fa-file-pdf"></i> View PDF Version';
+
+// Add button to modal container
+const pdfButtonContainer = document.querySelector('.pdf-button-container');
+if (pdfButtonContainer) {
+    pdfButtonContainer.appendChild(pdfButton);
+    pdfButton.style.display = 'none'; // Hide by default
+}
 
 const testimonialsModalFunc = function () {
     modalContainer.classList.toggle('active');
     overlay.classList.toggle('active');
+
+    // Hide PDF button when closing modal
+    if (!modalContainer.classList.contains('active')) {
+        pdfButton.style.display = 'none';
+    }
 }
 
 for (let i = 0; i < testimonialsItem.length; i++) {
@@ -32,8 +64,34 @@ for (let i = 0; i < testimonialsItem.length; i++) {
         modalTitle.innerHTML = this.querySelector('[data-testimonials-title]').innerHTML;
         modalText.innerHTML = this.querySelector('[data-testimonials-text]').innerHTML;
 
+        // Get the date from the parent testimonial item's data attribute
+        const testimonialDate = this.closest('.testimonials-item').getAttribute('data-testimonial-date');
+
+        if (testimonialDate && modalDate) {
+            const date = new Date(testimonialDate);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            modalDate.innerHTML = date.toLocaleDateString('en-US', options);
+            modalDate.setAttribute('datetime', testimonialDate);
+        }
+
+        // Check if this testimonial has a PDF
+        const pdfUrl = this.closest('.testimonials-item').getAttribute('data-pdf-url');
+
+        if (pdfUrl) {
+            // Show and configure PDF button
+            pdfButton.style.display = 'flex';
+
+            // Update the onclick handler for the current testimonial
+            pdfButton.onclick = function(e) {
+                e.preventDefault();
+                window.open(pdfUrl, '_blank');
+            };
+        } else {
+            pdfButton.style.display = 'none';
+        }
+
         testimonialsModalFunc();
-    })
+    });
 }
 
 //Activating close button in modal-testimonial
@@ -93,6 +151,71 @@ for (let i = 0; i < filterBtn.length; i++) {
 
     })
 }
+
+// Zoom functionality for portfolio images
+const zoomModal = document.getElementById('zoomModal');
+const zoomedImage = document.getElementById('zoomedImage');
+const closeZoomModal = document.querySelector('.close-zoom-modal');
+const zoomButtons = document.querySelectorAll('[data-zoom-btn]');
+const projectImages = document.querySelectorAll('[data-project-img]');
+
+// Function to open zoom modal
+const openZoomModal = function (imageSrc, imageAlt) {
+    zoomedImage.src = imageSrc;
+    zoomedImage.alt = imageAlt;
+    zoomModal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+};
+
+// Function to close zoom modal
+const closeZoomModalFunc = function () {
+    zoomModal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore scrolling
+};
+
+// Add click event to each zoom button
+zoomButtons.forEach((zoomBtn, index) => {
+    zoomBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation(); // Prevent triggering the parent link
+
+        const projectImg = projectImages[index];
+        const imgSrc = projectImg.src;
+        const imgAlt = projectImg.alt;
+
+        openZoomModal(imgSrc, imgAlt);
+    });
+});
+
+// Also allow clicking on the image itself to zoom (optional)
+projectImages.forEach((projectImg, index) => {
+    projectImg.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation(); // Prevent triggering the parent link
+
+        const imgSrc = this.src;
+        const imgAlt = this.alt;
+
+        openZoomModal(imgSrc, imgAlt);
+    });
+});
+
+// Close modal when clicking the X
+closeZoomModal.addEventListener('click', closeZoomModalFunc);
+
+// Close modal when clicking outside the image
+zoomModal.addEventListener('click', function (e) {
+    if (e.target === zoomModal) {
+        closeZoomModalFunc();
+    }
+});
+
+// Close modal with ESC key
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && zoomModal.style.display === 'block') {
+        closeZoomModalFunc();
+    }
+});
 
 // Enabling Contact Form
 

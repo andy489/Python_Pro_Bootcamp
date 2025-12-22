@@ -1,0 +1,220 @@
+<article class="about active" data-page="about">
+    <header>
+        <h2 class="h2 article-title">About me</h2>
+    </header>
+
+    <section class="about-text">
+        <p>
+            I'm a <b>Backend Developer</b> and <b>Systems Architect</b> from Sofia, Bulgaria, specializing in
+            robust engineering with <i>Java, Python, and mathematical modeling</i>. I enjoy turning complex
+            business problems into elegant, scalable, and efficient systems.
+        </p>
+        <p>
+            My job is to build your application's logic and infrastructure so that it is powerful, reliable,
+            and maintainable. I have built core, high-availability systems for some of the world's largest
+            iGaming companies, where performance, security, and data integrity are non-negotiable.
+        </p>
+    </section>
+
+    <section class="service">
+        <h3 class="h3 service-title">What I'm doing</h3>
+
+        <ul class="service-list">
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="{{ url_for('static', filename='images/icons/icon-dev.png') }}"
+                         alt="icon-dev" width="40"/>
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Java Systems Architect</h4>
+                    <p class="service-item-text">
+                        Resilient, cloud-native Java backends for data-intensive domains like iGaming and
+                        finance.
+                    </p>
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="{{ url_for('static', filename='images/icons/icon-app.png') }}"
+                         alt="icon-app" width="40">
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Web development</h4>
+                    <p class="service-item-text">
+                        High quality development of websites with a focus on clean code, clear strategy, and lasting
+                        results.
+                    </p>
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="{{ url_for('static', filename='images/icons/icon-design.png') }}"
+                         alt="icon-design" width="40">
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Mathematical Modeling</h4>
+                    <p class="service-item-text">Quantitative Systems for iGaming: Odds, Risk, & Analytics.</p>
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="{{ url_for('static', filename='images/icons/icon-photo.png') }}"
+                         alt="icon-photo" width="40">
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Photography</h4>
+                    <p class="service-item-text">
+                        Professionally photographing my very unprofessional cats.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h3 class="h3 testimonials-title">Testimonials</h3>
+
+        <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item" data-testimonial-date="2025-09-03"
+                data-pdf-url="{{ url_for('static', filename='assets/kudos-2025-09-03.pdf') }}">
+                <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                        <img src="{{ url_for('static', filename='images/avatars/avatar-1.png') }}"
+                             alt="Petar Hristov avatar"
+                             data-testimonials-avatar width="60">
+                    </figure>
+
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Petar Hristov</h4>
+
+                    <div class="testimonials-text" data-testimonials-text>
+                        <p>
+                            Thank you for your excellent work in creating the ways strategy payout for our slot
+                            games. Your innovative approach not only improved the overall design but also laid a
+                            strong foundation that will make backend development of ways-based slot games
+                            smoother and more efficient in the future. Your effort bridges creativity with
+                            technical practicality, and it will directly support me (and the team) in building
+                            robust, scalable gamelogic for upcoming games. Thank you for making a lasting impact
+                            on both gameplay and development!
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="testimonials-item" data-testimonial-date="2025-12-09"
+                data-pdf-url="{{ url_for('static', filename='assets/kudos-2025-12-09.pdf') }}">
+                <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                        <img src="{{ url_for('static', filename='images/avatars/avatar-2.png') }}"
+                             alt="Viktoriya Hristozova avatar"
+                             data-testimonials-avatar width="60">
+                    </figure>
+
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Viktoriya Hristozova</h4>
+
+                    <div class="testimonials-text" data-testimonials-text>
+                        <p>
+                            I want to express my gratitude for the dedication and passion you brought to our
+                            work this year. Your willingness to share your knowledge, skills, and ideas has been
+                            invaluable, and your commitment made every math test we collaborated on a genuine
+                            pleasure. Your professional, thoughtful approach sets a remarkable standard and
+                            continually elevates the quality of our work. Thank you for investing so much of
+                            yourself into what you do and for making such a positive impact on the team.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="testimonials-item" data-testimonial-date="2024-12-17"
+                data-pdf-url="{{ url_for('static', filename='assets/kudos-2024-12-17.pdf') }}">
+                <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                        <img src="{{ url_for('static', filename='images/avatars/avatar-3.png') }}"
+                             alt="Elena Velichkova avatar"
+                             data-testimonials-avatar width="60">
+                    </figure>
+
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Elena Velichkova</h4>
+
+                    <div class="testimonials-text" data-testimonials-text>
+                        <p>
+                            Thank you for the patience :)
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="testimonials-item" data-testimonial-date="2025-07-01"
+                data-pdf-url="{{ url_for('static', filename='assets/kudos-2025-07-01.pdf') }}">
+                <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                        <img src="https://i.postimg.cc/zXv1Xv81/avatar-4.png" alt="Daniel Velichkov avatar"
+                             data-testimonials-avatar width="60">
+                    </figure>
+
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Velichkov</h4>
+
+                    <div class="testimonials-text" data-testimonials-text>
+                        <p>
+                            Massive shoutout for completely rewriting all payout strategy systems! Your work on
+                            wild multipliers is nothing short of brilliant — supporting multiple wilds, flexible
+                            aggregation methods, and clean configuration is a game-changer. Handling any number
+                            of wilds separated in any number of types with individual multipliers Smart
+                            Aggregation – Multiplicative, additive, max, or even custom logic he knew system is
+                            both powerful and easy to maintain The way you structured this makes it effortless
+                            to configure and opens up so many possibilities for future features. Outstanding
+                            engineering! Also, massive shoutout for building up the integrity of our team.
+                            Always speaking your mind freely contributes for acknowledging all problems without
+                            hesitations and creates a safe environment for everyone to speak up about their
+                            issues.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="modal-container" data-modal-container>
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+                <i class="fas fa-xmark"></i>
+            </button>
+
+            <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                    <img src="{{ url_for('static', filename='images/avatars/avatar-1.png') }}"
+                         alt="Petar Hristov" width="80" data-modal-img/>
+                </figure>
+
+                <img src="{{ url_for('static', filename='images/icons/icon-quote.png') }}"
+                     alt="quote icon"/>
+            </div>
+
+            <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Petar Hristov</h4>
+                <time datetime="2025-09-03" data-modal-date>3 September, 2025</time>
+
+                <div class="modal-text" data-modal-text>
+                    <p>
+                        Thank you for your excellent work in creating the ways strategy payout for our slot
+                        games. Your innovative approach not only improved the overall design but also laid a
+                        strong foundation that will make backend development of ways-based slot games
+                        smoother and more efficient in the future. Your effort bridges creativity with
+                        technical practicality, and it will directly support me (and the team) in building
+                        robust, scalable gamelogic for upcoming games. Thank you for making a lasting impact
+                        on both gameplay and development!
+                    </p>
+                </div>
+                <div class="pdf-button-container"></div>
+            </div>
+        </section>
+    </div>
+</article>
