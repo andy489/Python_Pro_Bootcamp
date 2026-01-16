@@ -160,14 +160,14 @@
         top: 50px;
     }
 
-    .clients-list {
+    .cert-list {
         gap: 25px;
         margin: 0 -30px;
         padding: 45px;
         scroll-padding-inline: 45px;
     }
 
-    .clients-item { min-width: calc(33..33% - 35px); }
+    .cert-item { min-width: calc(33..33% - 35px); }
 
     .timeline-list { margin-left: 65px; }
 
@@ -210,5 +210,13 @@
 
     .avatar-box img {
         width: 115px;
+    }
+
+    .cert-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cert-img-wrapper {
+        padding-bottom: 60%;
     }
 }

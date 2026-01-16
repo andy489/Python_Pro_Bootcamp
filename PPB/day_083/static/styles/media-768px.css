@@ -48,4 +48,8 @@
         width: max-content;
         margin-left: auto;
     }
+
+    .cert-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

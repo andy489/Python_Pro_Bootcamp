@@ -34,7 +34,6 @@
                     </p>
                 </div>
             </li>
-
             <li class="service-item">
                 <div class="service-icon-box">
                     <img src="{{ url_for('static', filename='images/icons/icon-app.png') }}"
@@ -42,14 +41,13 @@
                 </div>
 
                 <div class="service-content-box">
-                    <h4 class="h4 service-item-title">Web development</h4>
+                    <h4 class="h4 service-item-title">Web and Mobile development</h4>
                     <p class="service-item-text">
                         High quality development of websites with a focus on clean code, clear strategy, and lasting
                         results.
                     </p>
                 </div>
             </li>
-
             <li class="service-item">
                 <div class="service-icon-box">
                     <img src="{{ url_for('static', filename='images/icons/icon-design.png') }}"
@@ -61,7 +59,6 @@
                     <p class="service-item-text">Quantitative Systems for iGaming: Odds, Risk, & Analytics.</p>
                 </div>
             </li>
-
             <li class="service-item">
                 <div class="service-icon-box">
                     <img src="{{ url_for('static', filename='images/icons/icon-photo.png') }}"
@@ -83,10 +80,10 @@
 
         <ul class="testimonials-list has-scrollbar">
             <li class="testimonials-item" data-testimonial-date="2025-09-03"
-                data-pdf-url="{{ url_for('static', filename='assets/kudos-2025-09-03.pdf') }}">
+                data-pdf-url="{{ url_for('static', filename='assets/kudos/kudos-2025-09-03.pdf') }}">
                 <div class="content-card" data-testimonials-item>
                     <figure class="testimonials-avatar-box">
-                        <img src="{{ url_for('static', filename='images/avatars/avatar-1.png') }}"
+                        <img src="{{ url_for('static', filename='images/avatars/avatar-01.png') }}"
                              alt="Petar Hristov avatar"
                              data-testimonials-avatar width="60">
                     </figure>
@@ -106,12 +103,11 @@
                     </div>
                 </div>
             </li>
-
             <li class="testimonials-item" data-testimonial-date="2025-12-09"
-                data-pdf-url="{{ url_for('static', filename='assets/kudos-2025-12-09.pdf') }}">
+                data-pdf-url="{{ url_for('static', filename='assets/kudos/kudos-2025-12-09.pdf') }}">
                 <div class="content-card" data-testimonials-item>
                     <figure class="testimonials-avatar-box">
-                        <img src="{{ url_for('static', filename='images/avatars/avatar-2.png') }}"
+                        <img src="{{ url_for('static', filename='images/avatars/avatar-02.png') }}"
                              alt="Viktoriya Hristozova avatar"
                              data-testimonials-avatar width="60">
                     </figure>
@@ -130,31 +126,30 @@
                     </div>
                 </div>
             </li>
-
-            <li class="testimonials-item" data-testimonial-date="2024-12-17"
-                data-pdf-url="{{ url_for('static', filename='assets/kudos-2024-12-17.pdf') }}">
+            <li class="testimonials-item" data-testimonial-date="2025-02-17"
+                data-pdf-url="{{ url_for('static', filename='assets/kudos/kudos-2025-02-17.pdf') }}">
                 <div class="content-card" data-testimonials-item>
                     <figure class="testimonials-avatar-box">
-                        <img src="{{ url_for('static', filename='images/avatars/avatar-3.png') }}"
-                             alt="Elena Velichkova avatar"
+                        <img src="{{ url_for('static', filename='images/avatars/avatar-06.png') }}"
+                             alt="Nikolay Ivanov avatar"
                              data-testimonials-avatar width="60">
                     </figure>
 
-                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Elena Velichkova</h4>
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Nikolay Ivanov</h4>
 
                     <div class="testimonials-text" data-testimonials-text>
                         <p>
-                            Thank you for the patience :)
+                            Thanks for always responding quickly, for your diligence and amazing work ethic.
                         </p>
                     </div>
                 </div>
             </li>
-
             <li class="testimonials-item" data-testimonial-date="2025-07-01"
-                data-pdf-url="{{ url_for('static', filename='assets/kudos-2025-07-01.pdf') }}">
+                data-pdf-url="{{ url_for('static', filename='assets/kudos/kudos-2025-07-01.pdf') }}">
                 <div class="content-card" data-testimonials-item>
                     <figure class="testimonials-avatar-box">
-                        <img src="https://i.postimg.cc/zXv1Xv81/avatar-4.png" alt="Daniel Velichkov avatar"
+                        <img src="{{ url_for('static', filename='images/avatars/avatar-04.png') }}"
+                             alt="Daniel Velichkov avatar"
                              data-testimonials-avatar width="60">
                     </figure>
 
@@ -190,7 +185,7 @@
 
             <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                    <img src="{{ url_for('static', filename='images/avatars/avatar-1.png') }}"
+                    <img src="{{ url_for('static', filename='images/avatars/avatar-01.png') }}"
                          alt="Petar Hristov" width="80" data-modal-img/>
                 </figure>
 
@@ -217,4 +212,62 @@
             </div>
         </section>
     </div>
+
+    <section class="cert">
+        <h3 class="h3 cert-title">Certificates</h3>
+
+        <ul class="cert-list has-scrollbar">
+            <li class="cert-item">
+                <a href="{{ url_for('static', filename='assets/certs/u-2025-02-22.pdf') }}" target="_blank"
+                   class="cert-link">
+                    <figure class="cert-img-wrapper">
+                        <div class="cert-icon-box">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <img src="{{ url_for('static', filename='assets/certs/u-2025-02-22.png') }}"
+                             alt="Cert 01" class="cert-img">
+                    </figure>
+                </a>
+            </li>
+
+            <li class="cert-item">
+                <a href="{{ url_for('static', filename='assets/certs/u-2025-03-02.pdf') }}" target="_blank"
+                   class="cert-link">
+                    <figure class="cert-img-wrapper">
+                        <div class="cert-icon-box">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <img src="{{ url_for('static', filename='assets/certs/u-2025-03-02.png') }}"
+                             alt="Cert 02" class="cert-img">
+                    </figure>
+                </a>
+            </li>
+
+            <li class="cert-item">
+                <a href="{{ url_for('static', filename='assets/certs/u-2025-03-04.pdf') }}" target="_blank"
+                   class="cert-link">
+                    <figure class="cert-img-wrapper">
+                        <div class="cert-icon-box">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <img src="{{ url_for('static', filename='assets/certs/u-2025-03-04.png') }}"
+                             alt="Cert 03" class="cert-img">
+                    </figure>
+                </a>
+            </li>
+
+            <li class="cert-item">
+                <a href="{{ url_for('static', filename='assets/certs/u-2025-03-08.pdf') }}" target="_blank"
+                   class="cert-link">
+                    <figure class="cert-img-wrapper">
+                        <div class="cert-icon-box">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <img src="{{ url_for('static', filename='assets/certs/u-2025-03-08.png') }}"
+                             alt="Cert 04" class="cert-img">
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </section>
 </article>

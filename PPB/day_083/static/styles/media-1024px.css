@@ -47,9 +47,13 @@
 
     .modal-img-wrapper > img { top: 20px; }
 
-    .clients-item { min-width: calc(25% - 15px); }
+    .cert-item { min-width: calc(25% - 15px); }
 
     .project-list { grid-template-columns: repeat(3, 1fr); }
 
     .blog-banner-box { height: 230px; }
+
+    .cert-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
