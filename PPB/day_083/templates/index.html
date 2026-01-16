@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrey's Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/music-player.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/media-450px.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/media-580px.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/media-768px.css') }}">
@@ -21,35 +21,34 @@
     {% include 'partials/sidebar.html' %}
 
     <div class="main-content">
+
+
         {% include 'partials/navigation.html' %}
 
-        <!-- About Section -->
-        <article class="about" data-page="about" {% if active_page == 'about' %}style="display: block;"{% endif %}>
+        <article class="about {{ 'active' if active_page == 'about' else '' }}" data-page="about">
             {% include 'partials/about.html' %}
         </article>
 
-        <!-- Resume Section -->
-        <article class="resume" data-page="resume" {% if active_page == 'resume' %}style="display: block;"{% endif %}>
+        <article class="resume {{ 'active' if active_page == 'resume' else '' }}" data-page="resume">
             {% include 'partials/resume.html' %}
         </article>
 
-        <!-- Portfolio Section -->
-        <article class="portfolio" data-page="portfolio" {% if active_page == 'portfolio' %}style="display: block;"{% endif %}>
+        <article class="portfolio {{ 'active' if active_page == 'portfolio' else '' }}" data-page="portfolio">
             {% include 'partials/portfolio.html' %}
         </article>
 
-        <!-- Blog Section -->
-        <article class="blog" data-page="blog" {% if active_page == 'blog' %}style="display: block;"{% endif %}>
+        <article class="blog {{ 'active' if active_page == 'blog' else '' }}" data-page="blog">
             {% include 'partials/blog.html' %}
         </article>
 
-        <!-- Contact Section -->
-        <article class="contact" data-page="contact" {% if active_page == 'contact' %}style="display: block;"{% endif %}>
+        <article class="contact {{ 'active' if active_page == 'contact' else '' }}" data-page="contact">
             {% include 'partials/contact.html' %}
         </article>
     </div>
+
 </main>
 <script src="{{ url_for('static', filename='scripts/navigation.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/music-player.js') }}"></script>
 </body>
 </html>
