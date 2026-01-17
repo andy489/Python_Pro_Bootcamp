@@ -5,14 +5,17 @@
 
     <section class="about-text">
         <p>
-            I'm a <b>Backend Developer</b> and <b>Systems Architect</b> from Sofia, Bulgaria, specializing in
-            robust engineering with <i>Java, Python, and mathematical modeling</i>. I enjoy turning complex
-            business problems into elegant, scalable, and efficient systems.
+            <b class="bolder">Backend Developer</b> & <b class="bolder">Systems Architect</b> based in Sofia, Bulgaria.
+            Results-driven with extensive experience in designing and implementing high-performance, scalable, and
+            fault-tolerant systems using Java and Python. Specialize in transforming complex business requirements into
+            elegant, maintainable architectures with strong emphasis on performance optimization, security, and data
+            integrity.
         </p>
         <p>
-            My job is to build your application's logic and infrastructure so that it is powerful, reliable,
-            and maintainable. I have built core, high-availability systems for some of the world's largest
-            iGaming companies, where performance, security, and data integrity are non-negotiable.
+            Proven track record building core infrastructure and high-availability platforms for leading <b
+                class="bolder">iGaming</b> companies, where low-latency processing, regulatory compliance, and
+            zero-downtime operations are critical. Skilled in mathematical modeling, distributed systems, and robust
+            engineering practices to deliver reliable solutions that scale efficiently under demanding workloads.
         </p>
     </section>
 
@@ -29,22 +32,24 @@
                 <div class="service-content-box">
                     <h4 class="h4 service-item-title">Java Systems Architect</h4>
                     <p class="service-item-text">
-                        Resilient, cloud-native Java backends for data-intensive domains like iGaming and
-                        finance.
+                        Specialized in architecting robust, scalable, and cloud-native Java backend platforms optimized
+                        for high-throughput, low-latency environments in regulated, data-heavy industries such as
+                        iGaming and finance.
                     </p>
                 </div>
             </li>
             <li class="service-item">
                 <div class="service-icon-box">
-                    <img src="{{ url_for('static', filename='images/icons/icon-app.png') }}"
-                         alt="icon-app" width="40">
+                    <img src="{{ url_for('static', filename='images/icons/icon-web.png') }}"
+                         alt="icon-web" width="40">
                 </div>
 
                 <div class="service-content-box">
-                    <h4 class="h4 service-item-title">Web and Mobile development</h4>
+                    <h4 class="h4 service-item-title">Web Development</h4>
                     <p class="service-item-text">
-                        High quality development of websites with a focus on clean code, clear strategy, and lasting
-                        results.
+                        High-quality development of websites and apps, built on clean, maintainable code,
+                        thoughtful architecture, and clear strategic direction.
+                        I deliver scalable, performant, and future-proof solutions for long-term results.
                     </p>
                 </div>
             </li>
@@ -56,7 +61,9 @@
 
                 <div class="service-content-box">
                     <h4 class="h4 service-item-title">Mathematical Modeling</h4>
-                    <p class="service-item-text">Quantitative Systems for iGaming: Odds, Risk, & Analytics.</p>
+                    <p class="service-item-text">Applied advanced mathematical and statistical techniques to develop
+                        quantitative frameworks for iGaming, including odds modeling, risk analysis, and analytical
+                        reporting.</p>
                 </div>
             </li>
             <li class="service-item">
@@ -68,7 +75,9 @@
                 <div class="service-content-box">
                     <h4 class="h4 service-item-title">Photography</h4>
                     <p class="service-item-text">
-                        Professionally photographing my very unprofessional cats.
+                        Enthusiastic amateur photographer with a particular focus on documenting the daily laziness of
+                        cats, emphasizing candid composition, timing, and the unique character of highly uncooperative
+                        subjects.
                     </p>
                 </div>
             </li>
@@ -76,7 +85,7 @@
     </section>
 
     <section class="testimonials">
-        <h3 class="h3 testimonials-title">Testimonials</h3>
+        <h3 class="h3 testimonials-title">Professional Feedback</h3>
 
         <ul class="testimonials-list has-scrollbar">
             <li class="testimonials-item" data-testimonial-date="2025-09-03"
@@ -208,9 +217,24 @@
                         on both gameplay and development!
                     </p>
                 </div>
-                <div class="pdf-button-container"></div>
+                <div class="pdf-button-container">
+                    <button class="pdf-button hidden" id="testimonialPdfButton" data-pdf-url="">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>View PDF</span>
+                    </button>
+                </div>
             </div>
         </section>
+    </div>
+
+    <!-- PDF Modal for testimonials -->
+    <div class="pdf-modal" id="pdfModal">
+        <span class="close-pdf-modal">&times;</span>
+        <div class="pdf-modal-content">
+            <div class="pdf-pdf-container">
+                <iframe id="pdfViewerFrame" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+        </div>
     </div>
 
     <section class="cert">

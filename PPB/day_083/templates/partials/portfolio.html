@@ -17,6 +17,9 @@
             <li class="filter-item">
                 <button data-filter-btn>Applications</button>
             </li>
+            <li class="filter-item">
+                <button data-filter-btn>Data Analysis</button>
+            </li>
         </ul>
 
         <div class="filter-select-box">
@@ -39,6 +42,9 @@
                 <li class="select-item">
                     <button data-select-item>Applications</button>
                 </li>
+                <li class="select-item">
+                    <button data-select-item>Data Analysis</button>
+                </li>
             </ul>
         </div>
 
@@ -48,8 +54,10 @@
         </div>
 
         <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="math & statistics">
-                <a href="https://github.com/andy489/Galton_Machine_Simulator" target="_blank">
+
+            <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/andy489/Guess_Card_Game"
+                   target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
                             <i class="fas fa-eye"></i>
@@ -58,12 +66,13 @@
                             <i class="fas fa-search-plus"></i>
                         </div>
 
-                        <img src="{{ url_for('static', filename='images/portfolio/_01-galton-poster.png') }}"
-                             alt="Galton Machine (Plinko)" loading="lazy" data-project-img>
+                        <img src="{{ url_for('static', filename='images/portfolio/_10-guess-card.png') }}"
+                             alt="Guess Card Game"
+                             loading="lazy" data-project-img>
                     </figure>
 
-                    <h3 class="project-title">Galton Beam Machine (Plinko)</h3>
-                    <p class="project-category">Math & Statistics</p>
+                    <h3 class="project-title">Guess Card Game</h3>
+                    <p class="project-category">Web Development</p>
                 </a>
             </li>
 
@@ -88,8 +97,27 @@
                 </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-                <a href="https://github.com/andy489/Guess_Card_Game"
+            <li class="project-item active" data-filter-item data-category="math & statistics">
+                <a href="https://github.com/andy489/Galton_Machine_Simulator" target="_blank">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="project-item-zoom-box" data-zoom-btn>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='images/portfolio/_01-galton-poster.png') }}"
+                             alt="Galton Machine (Plinko)" loading="lazy" data-project-img>
+                    </figure>
+
+                    <h3 class="project-title">Galton Beam Machine (Plinko)</h3>
+                    <p class="project-category">Math & Statistics</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="data analysis">
+                <a href="https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_080/day_080.ipynb"
                    target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
@@ -99,18 +127,18 @@
                             <i class="fas fa-search-plus"></i>
                         </div>
 
-                        <img src="{{ url_for('static', filename='images/portfolio/_10-guess-card.png') }}"
-                             alt="Guess Card Game"
+                        <img src="{{ url_for('static', filename='images/portfolio/_15-t-tests.png') }}"
+                             alt="t-tests"
                              loading="lazy" data-project-img>
                     </figure>
 
-                    <h3 class="project-title">Guess Card Game</h3>
-                    <p class="project-category">Web Development</p>
+                    <h3 class="project-title">Kernel Density Estimate</h3>
+                    <p class="project-category">Data Analysis</p>
                 </a>
             </li>
 
             <li class="project-item active" data-filter-item data-category="web development">
-                <a href="https://github.com/andy489/BJ"
+                <a href="https://github.com/andy489/MyMobile"
                    target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
@@ -120,12 +148,12 @@
                             <i class="fas fa-search-plus"></i>
                         </div>
 
-                        <img src="{{ url_for('static', filename='images/portfolio/_13-bj.png') }}"
-                             alt="Blackjack"
+                        <img src="{{ url_for('static', filename='images/portfolio/_11-my-mobile.png') }}"
+                             alt="Guess Card Game"
                              loading="lazy" data-project-img>
                     </figure>
 
-                    <h3 class="project-title">Blackjack</h3>
+                    <h3 class="project-title">My Mobile</h3>
                     <p class="project-category">Web Development</p>
                 </a>
             </li>
@@ -152,7 +180,7 @@
             </li>
 
             <li class="project-item active" data-filter-item data-category="web development">
-                <a href="https://github.com/andy489/MyMobile"
+                <a href="https://github.com/andy489/BJ"
                    target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
@@ -162,12 +190,12 @@
                             <i class="fas fa-search-plus"></i>
                         </div>
 
-                        <img src="{{ url_for('static', filename='images/portfolio/_11-my-mobile.png') }}"
-                             alt="Guess Card Game"
+                        <img src="{{ url_for('static', filename='images/portfolio/_13-bj.png') }}"
+                             alt="Blackjack"
                              loading="lazy" data-project-img>
                     </figure>
 
-                    <h3 class="project-title">My Mobile</h3>
+                    <h3 class="project-title">Blackjack</h3>
                     <p class="project-category">Web Development</p>
                 </a>
             </li>

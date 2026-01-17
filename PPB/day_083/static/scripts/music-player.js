@@ -1,458 +1,373 @@
-// static/scripts/music-player.js
+class MusicPlayer {
+    constructor() {
+        this.elements = this.cacheElements();
+        this.state = this.initState();
+        this.playlist = this.initPlaylist();
+        this.rafId = null;
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Music player script loaded');
+        if (!this.validateElements()) return;
 
-    // Elements
-    const musicToggle = document.getElementById('music-toggle');
-    const volumeSlider = document.getElementById('volume-slider');
-    const backgroundMusic = document.getElementById('background-music');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const shuffleBtn = document.getElementById('shuffle-btn');
-    const songTitle = document.querySelector('.song-title');
-    const volumeLevel = document.querySelector('.volume-level');
-
-    // Check if elements exist
-    if (!musicToggle || !volumeSlider || !backgroundMusic) {
-        console.error('Music player elements not found');
-        return;
+        this.init();
     }
 
-    const musicIcon = musicToggle.querySelector('i');
+    cacheElements() {
+        return {
+            musicToggle: document.getElementById('music-toggle'),
+            volumeSlider: document.getElementById('volume-slider'),
+            backgroundMusic: document.getElementById('background-music'),
+            prevBtn: document.getElementById('prev-btn'),
+            nextBtn: document.getElementById('next-btn'),
+            shuffleBtn: document.getElementById('shuffle-btn'),
+            songTitle: document.querySelector('.song-title'),
+            volumeLevel: document.querySelector('.volume-level'),
+            progressSlider: document.getElementById('progress-slider'),
+            currentTimeDisplay: document.getElementById('current-time'),
+            totalTimeDisplay: document.getElementById('total-time'),
+            musicIcon: document.querySelector('#music-toggle i'),
+            musicPlayer: document.querySelector('.music-player')
+        };
+    }
 
-    // Playlist configuration
-    const playlist = [
-        { title: "Track 1", file: "1.mp3" },
-        { title: "Track 2", file: "2.mp3" },
-        { title: "Track 3", file: "3.mp3" }
-    ];
+    initState() {
+        return {
+            currentTrackIndex: parseInt(localStorage.getItem('currentTrack')) || 0,
+            isShuffled: localStorage.getItem('musicShuffled') === 'true',
+            isPlaying: false,
+            savedVolume: parseInt(localStorage.getItem('musicVolume')) || 30,
+            isSeeking: false,
+            shuffledPlaylist: []
+        };
+    }
 
-    // State variables
-    let currentTrackIndex = 0;
-    let shuffledPlaylist = [];
-    let isShuffled = localStorage.getItem('musicShuffled') === 'true';
-    let isPlaying = localStorage.getItem('musicPlaying') === 'true';
-    let savedVolume = localStorage.getItem('musicVolume') || 30;
+    initPlaylist() {
+        return [
+            { title: "Sleepwalker", file: "01.mp3" },
+            { title: "Keep Your Eyes Peeled", file: "02.mp3" },
+            { title: "Wavdealer - Zima", file: "03.mp3" }
+        ];
+    }
 
-    // Initialize player
-    function initPlayer() {
-        console.log('Initializing music player');
-
-        // Set initial volume
-        backgroundMusic.volume = savedVolume / 100;
-        volumeSlider.value = savedVolume;
-
-        // Update volume display
-        if (volumeLevel) {
-            volumeLevel.textContent = `${savedVolume}%`;
-            volumeSlider.style.setProperty('--volume-width', `${savedVolume}%`);
-        }
-
-        // Initialize playlist
-        shufflePlaylist();
-
-        // Load first track
-        loadTrack(currentTrackIndex);
-
-        // Set initial state
-        if (isPlaying) {
-            setTimeout(() => {
-                backgroundMusic.play().then(() => {
-                    console.log('Music autoplay successful');
-                    musicToggle.classList.add('playing');
-                    updateVolumeIcon(savedVolume); // Update with correct color
-                    updateNowPlaying();
-                }).catch(e => {
-                    console.log('Autoplay prevented:', e.message);
-                    musicToggle.classList.remove('playing');
-                    updateVolumeIcon(savedVolume); // Update with paused color
-                    updateNowPlaying();
-                });
-            }, 1000);
-        } else {
-            musicToggle.classList.remove('playing');
-            updateVolumeIcon(savedVolume); // Update with paused color
-            updateNowPlaying();
-        }
-
-        // Update shuffle button state
-        if (shuffleBtn) {
-            if (isShuffled) {
-                shuffleBtn.classList.add('active');
-            } else {
-                shuffleBtn.classList.remove('active');
+    validateElements() {
+        const required = ['musicToggle', 'volumeSlider', 'backgroundMusic', 'musicPlayer'];
+        for (const elem of required) {
+            if (!this.elements[elem]) {
+                console.error(`Missing required element: ${elem}`);
+                return false;
             }
         }
+        return true;
     }
 
-    // Shuffle playlist function
-    function shufflePlaylist() {
-        if (isShuffled) {
-            // Create shuffled playlist
-            shuffledPlaylist = [...playlist];
-            for (let i = shuffledPlaylist.length - 1; i > 0; i--) {
+    formatTime(seconds) {
+        if (!isFinite(seconds)) return '0:00';
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    updateUIState() {
+        const isPlaying = !this.elements.backgroundMusic.paused;
+        const isMusicPlaying = isPlaying || this.state.isPlaying;
+
+        this.elements.musicPlayer.classList.toggle('playing', isMusicPlaying);
+        this.elements.musicPlayer.classList.toggle('paused', !isMusicPlaying);
+        this.elements.musicToggle.classList.toggle('playing', isMusicPlaying);
+
+        if (this.elements.shuffleBtn) {
+            this.elements.shuffleBtn.classList.toggle('active', this.state.isShuffled);
+        }
+    }
+
+    updatePlayerState() {
+        this.updateUIState();
+        this.updateVolumeIcon();
+        this.updateSliderPercentages();
+    }
+
+    updateVolumeIcon() {
+        if (!this.elements.musicIcon) return;
+
+        const volume = this.elements.volumeSlider.value;
+        let iconClass;
+
+        if (volume == 0) {
+            iconClass = 'fas fa-volume-mute';
+        } else if (volume < 20) {
+            iconClass = 'fas fa-volume-off';
+        } else if (volume < 50) {
+            iconClass = 'fas fa-volume-low';
+        } else {
+            iconClass = 'fas fa-volume-high';
+        }
+
+        this.elements.musicIcon.className = iconClass;
+    }
+
+    updateSliderPercentages() {
+        const volumePercent = this.elements.volumeSlider.value;
+        this.elements.volumeSlider.style.setProperty('--slider-percent', `${volumePercent}%`);
+
+        if (this.elements.backgroundMusic.duration && !this.state.isSeeking) {
+            const progressPercent =
+                (this.elements.backgroundMusic.currentTime /
+                    this.elements.backgroundMusic.duration) * 100;
+            this.elements.progressSlider.style.setProperty('--slider-percent', `${progressPercent}%`);
+        }
+    }
+
+    updateProgress = () => {
+        if (!this.elements.backgroundMusic.duration || this.state.isSeeking) return;
+
+        const currentTime = this.elements.backgroundMusic.currentTime;
+        const duration = this.elements.backgroundMusic.duration;
+        const progressPercent = (currentTime / duration) * 100;
+
+        this.elements.progressSlider.value = progressPercent;
+
+        if (this.elements.currentTimeDisplay) {
+            this.elements.currentTimeDisplay.textContent = this.formatTime(currentTime);
+        }
+
+        this.updateSliderPercentages();
+
+        if (!this.elements.backgroundMusic.paused) {
+            this.rafId = requestAnimationFrame(this.updateProgress);
+        }
+    };
+
+    setupProgressSlider() {
+        this.elements.progressSlider.addEventListener('input', (e) => {
+            this.state.isSeeking = true;
+            const percent = e.target.value;
+            const duration = this.elements.backgroundMusic.duration;
+
+            if (duration) {
+                const newTime = (percent / 100) * duration;
+                if (this.elements.currentTimeDisplay) {
+                    this.elements.currentTimeDisplay.textContent = this.formatTime(newTime);
+                }
+                e.target.style.setProperty('--slider-percent', `${percent}%`);
+            }
+        });
+
+        this.elements.progressSlider.addEventListener('change', (e) => {
+            if (!this.elements.backgroundMusic.duration) return;
+            const newTime =
+                (e.target.value / 100) * this.elements.backgroundMusic.duration;
+            this.elements.backgroundMusic.currentTime = newTime;
+            this.state.isSeeking = false;
+        });
+
+        this.elements.backgroundMusic.addEventListener('timeupdate', () => {
+            if (!this.state.isSeeking) this.updateProgress();
+        });
+
+        this.elements.backgroundMusic.addEventListener('loadedmetadata', () => {
+            if (this.elements.totalTimeDisplay) {
+                this.elements.totalTimeDisplay.textContent =
+                    this.formatTime(this.elements.backgroundMusic.duration);
+            }
+        });
+    }
+
+    initPlayer() {
+        this.elements.backgroundMusic.volume = this.state.savedVolume / 100;
+        this.elements.volumeSlider.value = this.state.savedVolume;
+
+        if (this.elements.volumeLevel) {
+            this.elements.volumeLevel.textContent = `${this.state.savedVolume}%`;
+        }
+
+        this.shufflePlaylist();
+        this.setupProgressSlider();
+        this.bindEvents();
+        this.loadTrack(this.state.currentTrackIndex);
+
+        this.elements.musicPlayer.classList.add('paused');
+        this.elements.musicToggle.classList.remove('playing');
+
+        this.updatePlayerState();
+        this.updateVolumeIcon();
+        this.updateSliderPercentages();
+
+        if (localStorage.getItem('musicPlaying') === 'true') {
+            this.attemptAutoplay();
+        }
+    }
+
+    attemptAutoplay() {
+        this.elements.backgroundMusic.play()
+            .then(() => {
+                this.state.isPlaying = true;
+                this.updatePlayerState();
+                this.startProgressUpdates();
+            })
+            .catch(() => {
+                this.state.isPlaying = false;
+                this.updatePlayerState();
+            });
+    }
+
+    shufflePlaylist() {
+        if (this.state.isShuffled) {
+            this.state.shuffledPlaylist = [...this.playlist];
+            for (let i = this.state.shuffledPlaylist.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
-                [shuffledPlaylist[i], shuffledPlaylist[j]] = [shuffledPlaylist[j], shuffledPlaylist[i]];
+                [this.state.shuffledPlaylist[i], this.state.shuffledPlaylist[j]] =
+                    [this.state.shuffledPlaylist[j], this.state.shuffledPlaylist[i]];
             }
-            console.log('Playlist shuffled:', shuffledPlaylist);
         } else {
-            // Use original order
-            shuffledPlaylist = [...playlist];
-            console.log('Playlist in original order');
+            this.state.shuffledPlaylist = [...this.playlist];
         }
     }
 
-    // Load a track
-    function loadTrack(index) {
-        if (index < 0 || index >= shuffledPlaylist.length) {
-            console.error('Invalid track index:', index);
+    loadTrack(index) {
+        if (index < 0 || index >= this.state.shuffledPlaylist.length) {
+            this.playNext();
             return;
         }
 
-        currentTrackIndex = index;
-        const track = shuffledPlaylist[currentTrackIndex];
+        this.state.currentTrackIndex = index;
+        const track = this.state.shuffledPlaylist[index];
 
-        // Update audio source
-        backgroundMusic.src = `/static/music/${track.file}`;
+        if (this.rafId) cancelAnimationFrame(this.rafId);
 
-        // Update UI
-        updateNowPlaying();
+        // Store the current playing state
+        const wasPlaying = this.state.isPlaying;
 
-        console.log(`Loading track: ${track.title} (${track.file})`);
+        this.elements.progressSlider.value = 0;
+        this.elements.progressSlider.style.setProperty('--slider-percent', '0%');
 
-        // Save current track to localStorage
-        localStorage.setItem('currentTrack', currentTrackIndex);
+        if (this.elements.currentTimeDisplay) this.elements.currentTimeDisplay.textContent = '0:00';
+        if (this.elements.totalTimeDisplay) this.elements.totalTimeDisplay.textContent = '0:00';
 
-        // Load the track
-        backgroundMusic.load();
+        this.state.isSeeking = false;
+        this.elements.backgroundMusic.src = `/static/music/${track.file}`;
+        this.updateNowPlaying();
+        localStorage.setItem('currentTrack', index);
+        this.elements.progressSlider.disabled = false;
 
-        // If we were playing, continue playing
-        if (isPlaying) {
+        // Update UI state BEFORE loading the new track
+        this.updateUIState();
+
+        this.elements.backgroundMusic.load();
+
+        // Restore playing state after loading the new track
+        if (wasPlaying) {
             setTimeout(() => {
-                backgroundMusic.play().catch(e => {
-                    console.log('Could not autoplay next track:', e.message);
-                });
+                this.elements.backgroundMusic.play()
+                    .then(() => {
+                        this.state.isPlaying = true;
+                        this.updatePlayerState();
+                        this.startProgressUpdates();
+                    })
+                    .catch(() => {
+                        this.state.isPlaying = false;
+                        this.updatePlayerState();
+                    });
             }, 100);
-        }
-    }
-
-    // Play next track
-    function playNext() {
-        let nextIndex = currentTrackIndex + 1;
-        if (nextIndex >= shuffledPlaylist.length) {
-            nextIndex = 0; // Loop back to beginning
-        }
-        loadTrack(nextIndex);
-
-        // Add animation feedback
-        if (songTitle) {
-            songTitle.style.animation = 'slideInRight 0.3s ease';
-            setTimeout(() => {
-                songTitle.style.animation = '';
-            }, 300);
-        }
-    }
-
-    // Play previous track
-    function playPrev() {
-        let prevIndex = currentTrackIndex - 1;
-        if (prevIndex < 0) {
-            prevIndex = shuffledPlaylist.length - 1; // Loop to end
-        }
-        loadTrack(prevIndex);
-    }
-
-    // Update now playing display
-    function updateNowPlaying() {
-        if (songTitle && shuffledPlaylist[currentTrackIndex]) {
-            songTitle.textContent = shuffledPlaylist[currentTrackIndex].title;
-
-            // Add pulsing animation if playing
-            if (!backgroundMusic.paused) {
-                songTitle.style.animation = 'pulse 2s infinite';
-            } else {
-                songTitle.style.animation = '';
-            }
-        }
-    }
-
-    // Update volume icon
-    function updateVolumeIcon(volume) {
-        if (!musicIcon) return;
-
-        const isPaused = backgroundMusic.paused;
-        const iconColor = isPaused ? 'var(--light-gray70)' : 'var(--orange-yellow-crayola)';
-
-        if (volume == 0) {
-            musicIcon.className = 'fas fa-volume-mute';
-        } else if (volume < 20) {
-            musicIcon.className = 'fas fa-volume-off';
-        } else if (volume < 50) {
-            musicIcon.className = 'fas fa-volume-low';
         } else {
-            musicIcon.className = 'fas fa-volume-high';
+            this.state.isPlaying = false;
+            this.updatePlayerState();
         }
-
-        // Always set color based on play state
-        musicIcon.style.color = iconColor;
     }
 
-    // Toggle play/pause
-    musicToggle.addEventListener('click', function() {
-        if (backgroundMusic.paused) {
-            backgroundMusic.play().then(() => {
-                console.log('Music started playing');
-                musicToggle.classList.add('playing');
-                localStorage.setItem('musicPlaying', 'true');
-                isPlaying = true;
-                updateVolumeIcon(volumeSlider.value); // Update icon color
-                updateNowPlaying();
-            }).catch(e => {
-                console.log('Could not play music:', e.message);
-                // Still update icon to show paused state
-                updateVolumeIcon(volumeSlider.value);
-            });
+    playNext() {
+        this.loadTrack(
+            (this.state.currentTrackIndex + 1) % this.state.shuffledPlaylist.length
+        );
+    }
+
+    playPrev() {
+        this.loadTrack(
+            (this.state.currentTrackIndex - 1 + this.state.shuffledPlaylist.length) %
+                this.state.shuffledPlaylist.length
+        );
+    }
+
+    updateNowPlaying() {
+        if (this.elements.songTitle) {
+            this.elements.songTitle.textContent =
+                this.state.shuffledPlaylist[this.state.currentTrackIndex].title;
+        }
+    }
+
+    startProgressUpdates() {
+        if (!this.elements.backgroundMusic.paused) {
+            this.rafId = requestAnimationFrame(this.updateProgress);
+        }
+    }
+
+    togglePlayPause() {
+        if (this.elements.backgroundMusic.paused) {
+            this.elements.backgroundMusic.play()
+                .then(() => {
+                    this.state.isPlaying = true;
+                    localStorage.setItem('musicPlaying', 'true');
+                    this.updatePlayerState();
+                    this.startProgressUpdates();
+                })
+                .catch(() => {
+                    this.state.isPlaying = false;
+                    this.updatePlayerState();
+                });
         } else {
-            backgroundMusic.pause();
-            console.log('Music paused');
-            musicToggle.classList.remove('playing');
+            this.elements.backgroundMusic.pause();
+            this.state.isPlaying = false;
             localStorage.setItem('musicPlaying', 'false');
-            isPlaying = false;
-            updateVolumeIcon(volumeSlider.value); // Update icon color
-            updateNowPlaying();
+            this.updatePlayerState();
+            if (this.rafId) cancelAnimationFrame(this.rafId);
         }
-    });
+    }
 
-    // Volume control
-    volumeSlider.addEventListener('input', function() {
-        const volume = this.value;
-        backgroundMusic.volume = volume / 100;
+    handleVolumeChange(e) {
+        const volume = e.target.value;
+        this.elements.backgroundMusic.volume = volume / 100;
         localStorage.setItem('musicVolume', volume);
 
-        // Update volume width
-        volumeSlider.style.setProperty('--volume-width', `${volume}%`);
-
-        // Update volume level display
-        if (volumeLevel) {
-            volumeLevel.textContent = `${volume}%`;
+        if (this.elements.volumeLevel) {
+            this.elements.volumeLevel.textContent = `${volume}%`;
         }
 
-        // Update icon
-        updateVolumeIcon(volume);
-    });
+        this.updateVolumeIcon();
+        this.updateSliderPercentages();
+    }
 
-    // Next button
-    if (nextBtn) {
-        nextBtn.addEventListener('click', function() {
-            playNext();
-            // Add button feedback
-            this.style.animation = 'pulse 0.3s ease';
-            setTimeout(() => {
-                this.style.animation = '';
-            }, 300);
+    toggleShuffle() {
+        this.state.isShuffled = !this.state.isShuffled;
+        localStorage.setItem('musicShuffled', this.state.isShuffled);
+        if (this.elements.shuffleBtn) {
+            this.elements.shuffleBtn.classList.toggle('active', this.state.isShuffled);
+        }
+        this.shufflePlaylist();
+    }
+
+    bindEvents() {
+        this.elements.musicToggle.addEventListener('click', () => this.togglePlayPause());
+        this.elements.volumeSlider.addEventListener('input', (e) => this.handleVolumeChange(e));
+
+        if (this.elements.prevBtn) {
+            this.elements.prevBtn.addEventListener('click', () => this.playPrev());
+        }
+        if (this.elements.nextBtn) {
+            this.elements.nextBtn.addEventListener('click', () => this.playNext());
+        }
+        if (this.elements.shuffleBtn) {
+            this.elements.shuffleBtn.addEventListener('click', () => this.toggleShuffle());
+        }
+
+        this.elements.backgroundMusic.addEventListener('ended', () => this.playNext());
+        this.elements.backgroundMusic.addEventListener('play', () => this.startProgressUpdates());
+        this.elements.backgroundMusic.addEventListener('pause', () => {
+            if (this.rafId) cancelAnimationFrame(this.rafId);
         });
     }
 
-    // Previous button
-    if (prevBtn) {
-        prevBtn.addEventListener('click', function() {
-            playPrev();
-            // Add button feedback
-            this.style.animation = 'pulse 0.3s ease';
-            setTimeout(() => {
-                this.style.animation = '';
-            }, 300);
-        });
+    init() {
+        setTimeout(() => this.initPlayer(), 100);
     }
+}
 
-    // Shuffle button
-    if (shuffleBtn) {
-        shuffleBtn.addEventListener('click', function() {
-            isShuffled = !isShuffled;
-            localStorage.setItem('musicShuffled', isShuffled);
-
-            if (isShuffled) {
-                this.classList.add('active');
-                showMusicNotification('Shuffle: ON');
-            } else {
-                this.classList.remove('active');
-                showMusicNotification('Shuffle: OFF');
-            }
-
-            // Re-shuffle playlist
-            shufflePlaylist();
-
-            // If playing, continue with new order from current position
-            if (!backgroundMusic.paused) {
-                // Find current track in new shuffled order
-                const currentTrackFile = playlist[currentTrackIndex].file;
-                const newIndex = shuffledPlaylist.findIndex(track => track.file === currentTrackFile);
-                if (newIndex !== -1) {
-                    currentTrackIndex = newIndex;
-                }
-                updateNowPlaying();
-            }
-        });
-    }
-
-    // Handle track ending
-    backgroundMusic.addEventListener('ended', function() {
-        console.log('Track ended, playing next');
-        playNext();
-    });
-
-    // Handle audio errors
-    backgroundMusic.addEventListener('error', function(e) {
-        console.error('Audio error:', e);
-        console.error('Audio error details:', backgroundMusic.error);
-        showMusicNotification('Error loading track, skipping...');
-        setTimeout(playNext, 1000);
-    });
-
-    // Handle audio loading
-    backgroundMusic.addEventListener('loadeddata', function() {
-        console.log('Audio loaded successfully:', backgroundMusic.src);
-    });
-
-    // Handle play event
-    backgroundMusic.addEventListener('play', function() {
-        console.log('Track started playing');
-        updateNowPlaying();
-        updateVolumeIcon(volumeSlider.value); // Update icon when play starts
-    });
-
-    // Handle pause event
-    backgroundMusic.addEventListener('pause', function() {
-        console.log('Track paused');
-        updateNowPlaying();
-        updateVolumeIcon(volumeSlider.value); // Update icon when paused
-    });
-
-    // Handle page visibility change
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden && !backgroundMusic.paused) {
-            localStorage.setItem('musicPlaying', 'true');
-        }
-    });
-
-    // Auto-pause when navigating away
-    window.addEventListener('beforeunload', function() {
-        if (!backgroundMusic.paused) {
-            localStorage.setItem('musicPlaying', 'true');
-        }
-    });
-
-    // Add keyboard shortcuts
-    document.addEventListener('keydown', function(e) {
-        // Space bar to play/pause
-        if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            e.preventDefault();
-            musicToggle.click();
-        }
-        // Right arrow for next track
-        else if (e.code === 'ArrowRight' && (e.ctrlKey || e.metaKey)) {
-            e.preventDefault();
-            if (nextBtn) nextBtn.click();
-        }
-        // Left arrow for previous track
-        else if (e.code === 'ArrowLeft' && (e.ctrlKey || e.metaKey)) {
-            e.preventDefault();
-            if (prevBtn) prevBtn.click();
-        }
-    });
-
-    // Initialize the player
-    initPlayer();
-
-    // Function to show notification
-    function showMusicNotification(message) {
-        // Remove existing notification if any
-        const existingNotification = document.querySelector('.music-notification');
-        if (existingNotification) {
-            existingNotification.remove();
-        }
-
-        const notification = document.createElement('div');
-        notification.className = 'music-notification';
-        notification.innerHTML = `<p>${message}</p>`;
-
-        document.body.appendChild(notification);
-
-        setTimeout(() => {
-            notification.style.animation = 'slideOut 0.3s ease';
-            setTimeout(() => notification.remove(), 300);
-        }, 2000);
-    }
-
-    // Add mobile music controls to navbar if needed
-    function addMobileMusicControls() {
-        const navbar = document.querySelector('.navbar-list');
-        if (window.innerWidth <= 580 && navbar && !document.getElementById('mobile-music-toggle')) {
-            const musicControls = document.createElement('li');
-            musicControls.className = 'navbar-music-controls';
-            musicControls.innerHTML = `
-                <button class="navbar-music-btn" id="mobile-music-toggle" title="Toggle Music">
-                    <i class="fas fa-volume-up"></i>
-                </button>
-            `;
-            navbar.appendChild(musicControls);
-
-            const mobileToggle = document.getElementById('mobile-music-toggle');
-            const mobileIcon = mobileToggle.querySelector('i');
-
-            function updateMobileButton() {
-                 const isPaused = backgroundMusic.paused;
-                if (!isPaused) {
-                    mobileToggle.style.background = 'var(--orange-yellow-crayola)';
-                    mobileToggle.style.color = 'var(--smoky-black)';
-                    mobileIcon.className = 'fas fa-volume-up';
-                } else {
-                    mobileToggle.style.background = 'var(--jet)';
-                    mobileIcon.style.color = 'var(--light-gray70)'; // Grey when paused
-                    mobileIcon.className = 'fas fa-volume-mute';
-                }
-            }
-
-            updateMobileButton();
-
-            mobileToggle.addEventListener('click', function() {
-                musicToggle.click();
-                updateMobileButton();
-            });
-
-            musicToggle.addEventListener('click', updateMobileButton);
-        }
-    }
-
-    addMobileMusicControls();
-
-    // Add CSS animations for notification if not already present
-    if (!document.querySelector('#music-notification-styles')) {
-        const style = document.createElement('style');
-        style.id = 'music-notification-styles';
-        style.textContent = `
-            @keyframes slideIn {
-                from {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
-                to {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-            @keyframes slideOut {
-                from {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-                to {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    window.musicPlayer = new MusicPlayer();
 });
