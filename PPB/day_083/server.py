@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from flask import Flask, request, flash, redirect, render_template, jsonify, url_for
 from flask_mail import Mail, Message
 import re
@@ -6,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 app = Flask(__name__, static_folder='static',
-           static_url_path='/static')
+            static_url_path='/static')
 
 # Configuration
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback-secret-key')
@@ -25,7 +27,8 @@ mail = Mail(app)
 
 @app.route('/')
 def home():
-    return render_template("index.html", active_page='about')
+    return render_template("index.html",
+                           active_page='about')
 
 
 def validate_email(email):

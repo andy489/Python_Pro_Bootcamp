@@ -18,8 +18,5 @@
                 style="font-size: 1.2em; width: 720px;"/>
         </div>
     </li>
-    <li>
-        <a href="https://www.appbrewery.co/p/newsletter">Angela Yu's Newsletter</a>
-    </li>
 </ul>
 
