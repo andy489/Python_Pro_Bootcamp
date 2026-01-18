@@ -2,6 +2,7 @@
 
 |Day|Level|Topics|Jupyter Notebook|Project Name|Repo|
 |-:|:-|:-|:-:|:-|:-:|
+|83|Advanced|→ Portfolio Website|-|Professional Portfolio Project<br>→ [**server.py**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_083/server.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_083)|
 |82|Advanced|→ Scripting|-|Morse Code Encoder/Decoder<br>→ [**morse_cli.py**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_082/morse_cli.py)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_082)|
 |81|Advanced|→ Capstone Project - Predict House Prices|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_081/day_081.ipynb)|Capstone Project - Predict House Prices<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_081/day_081.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_081)|
 |80|Advanced|→ The tragic Discovery of Handwashing: t-Tests & Distributions|[Jupyter notebook](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_080/day_080.ipynb)|The tragic Discovery of Handwashing: t-Tests & Distributions<br>→ [**.ipynb**](https://github.com/andy489/Python_Pro_Bootcamp/blob/main/PPB/day_080/day_080.ipynb)|[Repo Link](https://github.com/andy489/Python_Pro_Bootcamp/tree/main/PPB/day_080)|
